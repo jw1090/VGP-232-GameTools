@@ -8,11 +8,10 @@ namespace Assignment1
 {
     public class Weapon
     {
-        // Name,Type,Rarity,BaseAttack
-        public string Name { get; set; }
-        public string Type { get; set; }
-        public int Rarity { get; set; }
-        public int BaseAttack { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public string Type { get; set; } = string.Empty;
+        public int Rarity { get; set; } = 0;
+        public int BaseAttack { get; set; } = 0;
         
         /// <summary>
         /// The Comparator function to check for name
@@ -25,10 +24,20 @@ namespace Assignment1
             return left.Name.CompareTo(right.Name);
         }
 
-        // TODO: add sort for each property:
-        // CompareByType
-        // CompareByRarity
-        // CompareByBaseAttack
+        public static int CompareByType(Weapon left, Weapon right)
+        {
+            return left.Type.CompareTo(right.Type);
+        }
+
+        public static int CompareByRarity(Weapon left, Weapon right)
+        {
+            return left.Rarity.CompareTo(right.Rarity);
+        }
+
+        public static int CompareByBaseAttack(Weapon left, Weapon right)
+        {
+            return left.BaseAttack.CompareTo(right.BaseAttack);
+        }
 
         /// <summary>
         /// The Weapon string with all the properties
@@ -36,9 +45,7 @@ namespace Assignment1
         /// <returns>The Weapon formated string</returns>
         public override string ToString()
         {
-            // TODO: construct a comma seperated value string
-            // Name,Type,Rarity,BaseAttack
-            return "This is not implemented";
+            return $"{this.GetType()}: {Name}, {Type}, {Rarity}, {BaseAttack}.";
         }
     }
 }

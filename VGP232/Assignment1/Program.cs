@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.IO;
 
-// TODO: Fill in your name and student number.
 // Assignment 1
-// NAME: 
-// STUDENT NUMBER: 
+// NAME: Joseph Walden
+// STUDENT NUMBER: 2042506
 
 namespace Assignment1
 {
