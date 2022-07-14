@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Assignment1
+﻿namespace Assignment1
 {
     public class Weapon
     {
@@ -45,7 +39,7 @@ namespace Assignment1
         /// <returns>The Weapon formated string</returns>
         public override string ToString()
         {
-            return $"{this.GetType()}: {Name}, {Type}, {Rarity}, {BaseAttack}.";
+            return $"Name: {Name}, Type: {Type}, Rarity: {Rarity}, Base Attack: {BaseAttack}.";
         }
     }
 }

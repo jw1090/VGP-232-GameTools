@@ -40,17 +40,11 @@ namespace Assignment1
                 // h or --help for help to output the instructions on how to use it
                 if (args[i] == "-h" || args[i] == "--help")
                 {
-                    Console.WriteLine("-i <path> or --input <path> : loads the input file path specified (required)");
-                    Console.WriteLine("-o <path> or --output <path> : saves result in the output file path specified (optional)");
-                    
-                    // TODO: include help info for count
-                    //"-c or --count : displays the number of entries in the input file (optional).";
-                    
-                    // TODO: include help info for append
-                    //"-a or --append : enables append mode when writing to an existing output file (optional)";
-
-                    // TODO: include help info for sort
-                    //"-s or --sort <column name> : outputs the results sorted by column name";
+                    Console.WriteLine($"-i <path> or --input <path> : loads the input file path specified (required)");
+                    Console.WriteLine($"-o <path> or --output <path> : saves result in the output file path specified (optional)");
+                    Console.WriteLine($"-c or --count : displays the number of entries in the input file (optional).");
+                    Console.WriteLine($"-a or --append : enables append mode when writing to an existing output file (optional)");
+                    Console.WriteLine($"-s or --sort <column name> : outputs the results sorted by column name");
 
                     break;
                 }
@@ -65,11 +59,11 @@ namespace Assignment1
 
                         if (string.IsNullOrEmpty(inputFile))
                         {
-                            // TODO: print no input file specified.
+                            Console.WriteLine($"No input file path specified.");
                         }
                         else if (!File.Exists(inputFile))
                         {
-                            // TODO: print the file specified does not exist.
+                            Console.WriteLine($"The input file path does not exist: {inputFile}");
                         }
                         else
                         {
@@ -200,13 +194,50 @@ namespace Assignment1
                 while (reader.Peek() > 0)
                 {
                     string line = reader.ReadLine();
-                    // string[] values = line.Split(',');
+                    string[] values = line.Split(',');
 
-                    Weapon weapon = new Weapon();
-                    // TODO: validate that the string array the size expected.
-                    // TODO: use int.Parse or TryParse for stats/number values.
+                    if(values.Length < 4)
+                    {
+                        Console.WriteLine($"Failed to add weapon - Not enough arguments [{values.Length}] to create a new weapon.");
+                        continue;
+                    }
+                    else if(values.Length > 4)
+                    {
+                        Console.WriteLine($"Failed to add weapon - Too many arguments [{values.Length}] to create a new weapon.");
+                        continue;
+                    }
+
                     // Populate the properties of the Weapon
-                    // TODO: Add the Weapon to the list
+                    Weapon weapon = new Weapon();
+
+                    weapon.Name = values[0];
+                    char.ToUpper(weapon.Name[0]); // Capitalize first letters of the Name;
+
+                    weapon.Type = values[1];
+                    char.ToUpper(weapon.Type[0]); // Capitalize first letters of the Type;
+
+                    if (int.TryParse(values[2], out int rarity))
+                    {
+                        weapon.Rarity = rarity;
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Failed to add weapon - Rarity was not a valid entry [{rarity}].");
+                        continue;
+                    }
+
+                    if (int.TryParse(values[3], out int baseAttack))
+                    {
+                        weapon.BaseAttack = baseAttack;
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Failed to add weapon - Base Attack was not a valid entry [{rarity}].");
+                        continue;
+                    }
+
+                    output.Add(weapon); // Add the Weapon to the list
+                    Console.WriteLine($"Weapon added - {weapon.Name}");
                 }
             }
 
