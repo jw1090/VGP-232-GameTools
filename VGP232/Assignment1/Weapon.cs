@@ -8,14 +8,6 @@ namespace Assignment1
 {
     public class Weapon
     {
-        public enum SortType
-        {
-            Name,
-            Type,
-            Rarity,
-            BaseAttack,
-        }
-
         public string Name { get; set; } = string.Empty;
         public string Type { get; set; } = string.Empty;
         public int Rarity { get; set; } = 0;

@@ -8,6 +8,15 @@ using System.IO;
 
 namespace Assignment1
 {
+    public enum SortType
+    {
+        None = -1,
+        Name,
+        Type,
+        Rarity,
+        BaseAttack,
+    }
+
     class MainClass
     {
         public static void Main(string[] args)
@@ -28,9 +37,9 @@ namespace Assignment1
 
             // The flag to determine if we need to sort the results via name.
             bool sortEnabled = false;
-            
+
             // The column name to be used to determine which sort comparison function to use.
-            string sortColumnName = string.Empty;
+            SortType sortColumnName = SortType.None;
 
             // The results to be output to a file or to the console.
             List<Weapon> results = new List<Weapon>();
@@ -76,19 +85,20 @@ namespace Assignment1
                 {
                     if(args.Length > i + 1)
                     {
-                        if()
+                        ++i;
+                        if (string.IsNullOrEmpty(args[i]))
                         {
-
+                            Console.WriteLine($"A sorting type has not been input.");
+                        }
+                        else if(Enum.TryParse(args[i], out sortColumnName))
+                        {
+                            sortEnabled = true;
                         }
                         else
                         {
-
+                            Console.WriteLine($"{args[i]} is invalid.");
                         }
                     }
-
-                    // TODO: set the sortEnabled flag and see if the next argument is set for the column name.
-
-                    // TODO: set the sortColumnName string used for determining if there's another sort function.
                 }
                 else if (args[i] == "-c" || args[i] == "--count")
                 {
@@ -124,12 +134,30 @@ namespace Assignment1
 
             if (sortEnabled)
             {
-                // TODO: add implementation to determine the column name to trigger a different sort. (Hint: column names are the 4 properties of the weapon class)
-                
-                // print: Sorting by <column name> e.g. BaseAttack.
+                Console.WriteLine($"Sorting by {sortColumnName}");
 
-                // Sorts the list based off of the Weapon name.
-                results.Sort(Weapon.CompareByName);
+                switch (sortColumnName)
+                {
+                    case SortType.Name:
+                        // Sorts the list based off of the Weapon Name.
+                        results.Sort(Weapon.CompareByName);
+                        break;
+                    case SortType.Type:
+                        // Sorts the list based off of the Weapon Type.
+                        results.Sort(Weapon.CompareByType);
+                        break;
+                    case SortType.Rarity:
+                        // Sorts the list based off of the Weapon Rarity.
+                        results.Sort(Weapon.CompareByRarity);
+                        break;
+                    case SortType.BaseAttack:
+                        // Sorts the list based off of the Weapon Base Attack.
+                        results.Sort(Weapon.CompareByBaseAttack);
+                        break;
+                    default:
+                        Console.WriteLine($"{sortColumnName} is invalid. Please change!");
+                        break;
+                }
             }
 
             if (displayCount)
@@ -220,10 +248,10 @@ namespace Assignment1
                     Weapon weapon = new Weapon();
 
                     weapon.Name = values[0];
-                    char.ToUpper(weapon.Name[0]); // Capitalize first letters of the Name.
+                    weapon.Name = char.ToUpper(weapon.Name[0]) + weapon.Name.Substring(1); // Capitalize first letters of the Name.
 
                     weapon.Type = values[1];
-                    char.ToUpper(weapon.Type[0]); // Capitalize first letters of the Type.
+                    weapon.Type = char.ToUpper(weapon.Type[0]) + weapon.Type.Substring(1); // Capitalize first letters of the Type.
 
                     if (int.TryParse(values[2], out int rarity))
                     {
