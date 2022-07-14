@@ -1,7 +1,21 @@
-﻿namespace Assignment1
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment1
 {
     public class Weapon
     {
+        public enum SortType
+        {
+            Name,
+            Type,
+            Rarity,
+            BaseAttack,
+        }
+
         public string Name { get; set; } = string.Empty;
         public string Type { get; set; } = string.Empty;
         public int Rarity { get; set; } = 0;
@@ -39,7 +53,7 @@
         /// <returns>The Weapon formated string</returns>
         public override string ToString()
         {
-            return $"Name: {Name}, Type: {Type}, Rarity: {Rarity}, Base Attack: {BaseAttack}.";
+            return $"{Name},{Type},{Rarity},{BaseAttack}";
         }
     }
 }

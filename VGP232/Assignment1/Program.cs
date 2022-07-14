@@ -12,7 +12,7 @@ namespace Assignment1
     {
         public static void Main(string[] args)
         {
-            // Variables and flags
+            // Variables and flags.
 
             // The path to the input file to load.
             string inputFile = string.Empty;
@@ -23,7 +23,7 @@ namespace Assignment1
             // The flag to determine if we overwrite the output file or append to it.
             bool appendToFile = false;
 
-            // The flag to determine if we need to display the number of entries
+            // The flag to determine if we need to display the number of entries.
             bool displayCount = false;
 
             // The flag to determine if we need to sort the results via name.
@@ -32,12 +32,12 @@ namespace Assignment1
             // The column name to be used to determine which sort comparison function to use.
             string sortColumnName = string.Empty;
 
-            // The results to be output to a file or to the console
+            // The results to be output to a file or to the console.
             List<Weapon> results = new List<Weapon>();
 
             for (int i = 0; i < args.Length; i++)
             {
-                // h or --help for help to output the instructions on how to use it
+                // h or --help for help to output the instructions on how to use it.
                 if (args[i] == "-h" || args[i] == "--help")
                 {
                     Console.WriteLine($"-i <path> or --input <path> : loads the input file path specified (required)");
@@ -53,7 +53,7 @@ namespace Assignment1
                     // Check to make sure there's a second argument for the file name.
                     if (args.Length > i + 1)
                     {
-                        // stores the file name in the next argument to inputFile
+                        // Stores the file name in the next argument to inputFile.
                         ++i;
                         inputFile = args[i];
 
@@ -74,7 +74,20 @@ namespace Assignment1
                 }
                 else if (args[i] == "-s" || args[i] == "--sort")
                 {
-                    // TODO: set the sortEnabled flag and see if the next argument is set for the column name
+                    if(args.Length > i + 1)
+                    {
+                        if()
+                        {
+
+                        }
+                        else
+                        {
+
+                        }
+                    }
+
+                    // TODO: set the sortEnabled flag and see if the next argument is set for the column name.
+
                     // TODO: set the sortColumnName string used for determining if there's another sort function.
                 }
                 else if (args[i] == "-c" || args[i] == "--count")
@@ -83,29 +96,29 @@ namespace Assignment1
                 }
                 else if (args[i] == "-a" || args[i] == "--append")
                 {
-                    // TODO: set the appendToFile flag
+                    appendToFile = true;
                 }
                 else if (args[i] == "-o" || args[i] == "--output")
                 {
-                    // validation to make sure we do have an argument after the flag
+                    // Validation to make sure we do have an argument after the flag.
                     if (args.Length > i + 1)
                     {
-                        // increment the index.
+                        // Increment the index.
                         ++i;
                         string filePath = args[i];
                         if (string.IsNullOrEmpty(filePath))
                         {
-                            // TODO: print No output file specified.
+                            Console.WriteLine($"No input file path specified.");
                         }
                         else
                         {
-                            // TODO: set the output file to the outputFile
+                            outputFile = filePath;
                         }
                     }
                 }
                 else
                 {
-                    Console.WriteLine("The argument Arg[{0}] = [{1}] is invalid", i, args[i]);
+                    Console.WriteLine($"The argument Arg[{i}] = [{args[i]}] is invalid");
                 }
             }
 
@@ -113,7 +126,7 @@ namespace Assignment1
             {
                 // TODO: add implementation to determine the column name to trigger a different sort. (Hint: column names are the 4 properties of the weapon class)
                 
-                // print: Sorting by <column name> e.g. BaseAttack
+                // print: Sorting by <column name> e.g. BaseAttack.
 
                 // Sorts the list based off of the Weapon name.
                 results.Sort(Weapon.CompareByName);
@@ -121,7 +134,7 @@ namespace Assignment1
 
             if (displayCount)
             {
-                Console.WriteLine("There are {0} entries", results.Count);
+                Console.WriteLine($"There are {results.Count} entries");
             }
 
             if (results.Count > 0)
@@ -140,23 +153,25 @@ namespace Assignment1
                         fs = File.Open(outputFile, FileMode.Create);
                     }
 
-                    // opens a stream writer with the file handle to write to the output file.
+                    // Opens a stream writer with the file handle to write to the output file.
                     using (StreamWriter writer = new StreamWriter(fs))
                     {
-                        // Hint: use writer.WriteLine
-                        // TODO: write the header of the output "Name,Type,Rarity,BaseAttack"
-                        
-                        // TODO: use the writer to output the results.
+                        writer.WriteLine($"Name,Type,Rarity,BaseAttack");
 
-                        // TODO: print out the file has been saved.
+                        foreach (Weapon weapon in results)
+                        {
+                            writer.WriteLine(weapon);
+                        }
+
+                        Console.WriteLine($"The file has been saved to {outputFile}");
                     }
                 }
                 else
                 {
-                    // prints out each entry in the weapon list results.
-                    for (int i = 0; i < results.Count; i++)
+                    // Prints out each entry in the weapon list results.
+                    foreach(Weapon weapon in results)
                     {
-                        Console.WriteLine(results[i]);
+                        Console.WriteLine(weapon);
                     }
                 }
             }
@@ -171,12 +186,6 @@ namespace Assignment1
         /// <returns>The list of Weapons</returns>
         public static List<Weapon> Parse(string fileName)
         {
-            // TODO: implement the streamreader that reads the file and appends each line to the list
-            // note that the result that you get from using read is a string, and needs to be parsed 
-            // to an int for certain fields i.e. HP, Attack, etc.
-            // i.e. int.Parse() and if the results cannot be parsed it will throw an exception
-            // or can use int.TryParse() 
-
             // streamreader https://msdn.microsoft.com/en-us/library/system.io.streamreader(v=vs.110).aspx
             // Use string split https://msdn.microsoft.com/en-us/library/system.string.split(v=vs.110).aspx
 
@@ -211,10 +220,10 @@ namespace Assignment1
                     Weapon weapon = new Weapon();
 
                     weapon.Name = values[0];
-                    char.ToUpper(weapon.Name[0]); // Capitalize first letters of the Name;
+                    char.ToUpper(weapon.Name[0]); // Capitalize first letters of the Name.
 
                     weapon.Type = values[1];
-                    char.ToUpper(weapon.Type[0]); // Capitalize first letters of the Type;
+                    char.ToUpper(weapon.Type[0]); // Capitalize first letters of the Type.
 
                     if (int.TryParse(values[2], out int rarity))
                     {
