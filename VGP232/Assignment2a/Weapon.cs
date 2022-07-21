@@ -39,6 +39,11 @@ namespace Assignment2a
             return left.Type.CompareTo(right.Type);
         }
 
+        public static int CompareByImage(Weapon left, Weapon right)
+        {
+            return left.Image.CompareTo(right.Image);
+        }
+
         public static int CompareByRarity(Weapon left, Weapon right)
         {
             return left.Rarity.CompareTo(right.Rarity);
@@ -48,6 +53,14 @@ namespace Assignment2a
         {
             return left.BaseAttack.CompareTo(right.BaseAttack);
         }
+        public static int CompareBySecondaryStat(Weapon left, Weapon right)
+        {
+            return left.SecondaryStat.CompareTo(right.SecondaryStat);
+        }
+        public static int CompareByPassive(Weapon left, Weapon right)
+        {
+            return left.Passive.CompareTo(right.Passive);
+        }
 
         public static bool TryParse(string rawData, out Weapon weapon)
         {
@@ -56,12 +69,12 @@ namespace Assignment2a
             string[] values = rawData.Split(',');
 
             // Validate the length of values passed by raw data.
-            if (values.Length < 6)
+            if (values.Length < 7)
             {
                 Console.WriteLine($"Failed to add weapon - Not enough arguments [{values.Length}] to create a new weapon.");
                 return false;
             }
-            else if (values.Length > 6)
+            else if (values.Length > 7)
             {
                 Console.WriteLine($"Failed to create weapon - Too many arguments [{values.Length}] to create a new weapon.");
                 return false;

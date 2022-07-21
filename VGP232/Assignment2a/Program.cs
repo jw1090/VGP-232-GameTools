@@ -13,8 +13,11 @@ namespace Assignment2a
         None = -1,
         Name,
         Type,
+        Image,
         Rarity,
         BaseAttack,
+        SecondaryStat,
+        Passive,
     }
 
     class MainClass
@@ -146,6 +149,10 @@ namespace Assignment2a
                         // Sorts the list based off of the Weapon Type.
                         results.Sort(Weapon.CompareByType);
                         break;
+                    case SortType.Image:
+                        // Sorts the list based off of the Weapon Type.
+                        results.Sort(Weapon.CompareByImage);
+                        break;
                     case SortType.Rarity:
                         // Sorts the list based off of the Weapon Rarity.
                         results.Sort(Weapon.CompareByRarity);
@@ -153,6 +160,14 @@ namespace Assignment2a
                     case SortType.BaseAttack:
                         // Sorts the list based off of the Weapon Base Attack.
                         results.Sort(Weapon.CompareByBaseAttack);
+                        break;
+                    case SortType.SecondaryStat:
+                        // Sorts the list based off of the Weapon Type.
+                        results.Sort(Weapon.CompareBySecondaryStat);
+                        break;
+                    case SortType.Passive:
+                        // Sorts the list based off of the Weapon Type.
+                        results.Sort(Weapon.CompareByPassive);
                         break;
                     default:
                         Console.WriteLine($"{sortColumnName} is invalid. Please change!");
@@ -184,7 +199,7 @@ namespace Assignment2a
                     // Opens a stream writer with the file handle to write to the output file.
                     using (StreamWriter writer = new StreamWriter(fs))
                     {
-                        writer.WriteLine($"Name,Type,Rarity,BaseAttack");
+                        writer.WriteLine($"Name,Type,Image,Rarity,BaseAttack,SecondaryStat,Passive");
 
                         foreach (Weapon weapon in results)
                         {
@@ -221,13 +236,10 @@ namespace Assignment2a
 
             using (StreamReader reader = new StreamReader(fileName))
             {
-                // Skip the first line because header does not need to be parsed.
-                // Name,Type,Rarity,BaseAttack
-
                 string header = reader.ReadLine();
 
-                // The rest of the lines looks like the following:
-                // Skyward Blade,Sword,5,46
+                // Skip the first line because header does not need to be parsed.
+                // Name,Type,Rarity,BaseAttack
                 while (reader.Peek() > 0)
                 {
                     string line = reader.ReadLine();
