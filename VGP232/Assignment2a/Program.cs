@@ -142,31 +142,24 @@ namespace Assignment2a
                 switch (sortColumnName)
                 {
                     case SortType.Name:
-                        // Sorts the list based off of the Weapon Name.
                         results.Sort(Weapon.CompareByName);
                         break;
                     case SortType.Type:
-                        // Sorts the list based off of the Weapon Type.
                         results.Sort(Weapon.CompareByType);
                         break;
                     case SortType.Image:
-                        // Sorts the list based off of the Weapon Type.
                         results.Sort(Weapon.CompareByImage);
                         break;
                     case SortType.Rarity:
-                        // Sorts the list based off of the Weapon Rarity.
                         results.Sort(Weapon.CompareByRarity);
                         break;
                     case SortType.BaseAttack:
-                        // Sorts the list based off of the Weapon Base Attack.
                         results.Sort(Weapon.CompareByBaseAttack);
                         break;
                     case SortType.SecondaryStat:
-                        // Sorts the list based off of the Weapon Type.
                         results.Sort(Weapon.CompareBySecondaryStat);
                         break;
                     case SortType.Passive:
-                        // Sorts the list based off of the Weapon Type.
                         results.Sort(Weapon.CompareByPassive);
                         break;
                     default:

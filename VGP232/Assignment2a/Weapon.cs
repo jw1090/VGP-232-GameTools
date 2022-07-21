@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 
 namespace Assignment2a
 {
@@ -87,7 +86,7 @@ namespace Assignment2a
             // Populate Type
             if (Enum.TryParse(values[1], out WeaponType result))
             {
-                if(result == WeaponType.None)
+                if (result == WeaponType.None)
                 {
                     Console.WriteLine($"Failed to create weapon - Type: [{result}] is invalid.");
                     return false;
