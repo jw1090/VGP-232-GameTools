@@ -231,50 +231,13 @@ namespace Assignment2a
                 while (reader.Peek() > 0)
                 {
                     string line = reader.ReadLine();
-                    string[] values = line.Split(',');
 
-                    if (values.Length < 4)
+                    if(Weapon.TryParse(line, out Weapon weapon))
                     {
-                        Console.WriteLine($"Failed to add weapon - Not enough arguments [{values.Length}] to create a new weapon.");
-                        continue;
-                    }
-                    else if (values.Length > 4)
-                    {
-                        Console.WriteLine($"Failed to add weapon - Too many arguments [{values.Length}] to create a new weapon.");
-                        continue;
-                    }
+                        output.Add(weapon);
 
-                    // Populate the properties of the Weapon
-                    Weapon weapon = new Weapon();
-
-                    weapon.Name = values[0];
-                    weapon.Name = char.ToUpper(weapon.Name[0]) + weapon.Name.Substring(1); // Capitalize first letters of the Name.
-
-                    weapon.Type = values[1];
-                    weapon.Type = char.ToUpper(weapon.Type[0]) + weapon.Type.Substring(1); // Capitalize first letters of the Type.
-
-                    if (int.TryParse(values[2], out int rarity))
-                    {
-                        weapon.Rarity = rarity;
+                        Console.WriteLine($"Weapon added - {weapon.Name}");
                     }
-                    else
-                    {
-                        Console.WriteLine($"Failed to add weapon - Rarity was not a valid entry [{rarity}].");
-                        continue;
-                    }
-
-                    if (int.TryParse(values[3], out int baseAttack))
-                    {
-                        weapon.BaseAttack = baseAttack;
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Failed to add weapon - Base Attack was not a valid entry [{rarity}].");
-                        continue;
-                    }
-
-                    output.Add(weapon); // Add the Weapon to the list
-                    Console.WriteLine($"Weapon added - {weapon.Name}");
                 }
             }
 
