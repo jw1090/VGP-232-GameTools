@@ -71,11 +71,15 @@ namespace Assignment2a
             if (values.Length < 7)
             {
                 Console.WriteLine($"Failed to add weapon - Not enough arguments [{values.Length}] to create a new weapon.");
+
+                weapon = null;
                 return false;
             }
             else if (values.Length > 7)
             {
                 Console.WriteLine($"Failed to create weapon - Too many arguments [{values.Length}] to create a new weapon.");
+
+                weapon = null;
                 return false;
             }
 
@@ -89,6 +93,8 @@ namespace Assignment2a
                 if (result == WeaponType.None)
                 {
                     Console.WriteLine($"Failed to create weapon - Type: [{result}] is invalid.");
+
+                    weapon = null;
                     return false;
                 }
 
@@ -97,6 +103,8 @@ namespace Assignment2a
             else
             {
                 Console.WriteLine($"Failed to add weapon - [{values[1]}] is not an acceptable Weapon Type.");
+
+                weapon = null;
                 return false;
             }
 
@@ -111,6 +119,8 @@ namespace Assignment2a
             else
             {
                 Console.WriteLine($"Failed to create weapon - [{values[3]}] is not an acceptable Rarity.");
+
+                weapon = null;
                 return false;
             }
 
@@ -122,6 +132,8 @@ namespace Assignment2a
             else
             {
                 Console.WriteLine($"Failed to create weapon - [{values[4]}] is not an acceptable Base Attack.");
+
+                weapon = null;
                 return false;
             }
 

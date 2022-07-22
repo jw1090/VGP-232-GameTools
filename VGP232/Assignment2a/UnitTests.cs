@@ -8,8 +8,8 @@ namespace Assignment2a
     public class UnitTests
     {
         private WeaponCollection _weaponCollection;
-        private string inputPath;
-        private string outputPath;
+        private string _inputPath;
+        private string _outputPath;
 
         const string INPUT_FILE = "data2.csv";
         const string OUTPUT_FILE = "output.csv";
@@ -23,18 +23,19 @@ namespace Assignment2a
         [SetUp]
         public void SetUp()
         {
-            inputPath = CombineToAppPath(INPUT_FILE);
-            outputPath = CombineToAppPath(OUTPUT_FILE);
+            _inputPath = CombineToAppPath(INPUT_FILE);
+            _outputPath = CombineToAppPath(OUTPUT_FILE);
             _weaponCollection = new WeaponCollection();
+            _weaponCollection.Load(_inputPath);
         }
 
         [TearDown]
         public void CleanUp()
         {
             // We remove the output file after we are done.
-            if (File.Exists(outputPath))
+            if (File.Exists(_outputPath))
             {
-                File.Delete(outputPath);
+                File.Delete(_outputPath);
             }
         }
 
@@ -42,90 +43,94 @@ namespace Assignment2a
         [Test]
         public void WeaponCollection_GetHighestBaseAttack_HighestValue()
         {
-            _weaponCollection.Load(inputPath);
             Assert.AreEqual(48, _weaponCollection.GetHighestBaseAttack());
         }
 
         [Test]
         public void WeaponCollection_GetLowestBaseAttack_LowestValue()
-        {
-            _weaponCollection.Load(inputPath);
+        { 
             Assert.AreEqual(23, _weaponCollection.GetLowestBaseAttack());
         }
 
         [TestCase(Weapon.WeaponType.Sword, 21)]
         public void WeaponCollection_GetAllWeaponsOfType_ListOfWeapons(Weapon.WeaponType type, int expectedValue)
         {
-            Assert.AreEqual(expectedValue, _weaponCollection.GetAllWeaponsOfType(type));
+            Assert.AreEqual(expectedValue, _weaponCollection.GetAllWeaponsOfType(type).Count);
         }
 
         [TestCase(5, 10)]
         public void WeaponCollection_GetAllWeaponsOfRarity_ListOfWeapons(int stars, int expectedValue)
         {
-            // TODO: call WeaponCollection.GetAllWeaponsOfRarity(stars) and confirm that the weapons list returns Count matches the expected value using asserts.
+            Assert.AreEqual(10, _weaponCollection.GetAllWeaponsOfRarity(stars).Count);
         }
 
         [Test]
         public void WeaponCollection_LoadThatExistAndValid_True()
         {
-            // TODO: load returns true, expect WeaponCollection with count of 95 .
+            Assert.AreEqual(95, _weaponCollection.Count);
         }
 
         [Test]
         public void WeaponCollection_LoadThatDoesNotExist_FalseAndEmpty()
         {
-            // TODO: load returns false, expect an empty WeaponCollection
+            _weaponCollection.Clear();
+            Assert.IsFalse(_weaponCollection.Load(""));
+            _weaponCollection.Load(_inputPath);
         }
 
         [Test]
         public void WeaponCollection_SaveWithValuesCanLoad_TrueAndNotEmpty()
         {
-            // TODO: save returns true, load returns true, and WeaponCollection is not empty.
+            Assert.IsTrue(_weaponCollection.Load(_inputPath));
+            Assert.IsTrue(_weaponCollection.Save(_outputPath));
+            Assert.IsTrue(_weaponCollection.Count != 0);
         }
 
         [Test]
         public void WeaponCollection_SaveEmpty_TrueAndEmpty()
         {
-            // After saving an empty WeaponCollection, load the file and expect WeaponCollection to be empty.
-            //WeaponCollection.Clear();
-            //Assert.IsTrue(WeaponCollection.Save(outputPath));
-            //Assert.IsTrue(WeaponCollection.Load(outputPath));
-            //Assert.IsTrue(WeaponCollection.Count == 0);
+            _weaponCollection.Clear();
+            Assert.IsTrue(_weaponCollection.Save(_outputPath));
+            Assert.IsTrue(_weaponCollection.Load(_outputPath));
+            Assert.IsTrue(_weaponCollection.Count == 0);
         }
 
         // Weapon Unit Tests
         [Test]
         public void Weapon_TryParseValidLine_TruePropertiesSet()
         {
-            // TODO: create a Weapon with the stats above set properly
             Weapon expected = null;
-            // TODO: uncomment this once you added the Type1 and Type2
-            //expected = new Weapon()
-            //{
-            //    Name = "Skyward Blade",
-            //    Type = Weapon.Sword,
-            //    Image = "https://vignette.wikia.nocookie.net/gensin-impact/images/0/03/Weapon_Skyward_Blade.png",
-            //    Rarity = 5,
-            //    BaseAttack = 46,
-            //    SeconardStat = "Energy Recharge",
-            //    Passive = "Sky-Piercing Fang"
-            //};
+            expected = new Weapon()
+            {
+                Name = "Skyward Blade",
+                Type = Weapon.WeaponType.Sword,
+                Image = "https://vignette.wikia.nocookie.net/gensin-impact/images/0/03/Weapon_Skyward_Blade.png",
+                Rarity = 5,
+                BaseAttack = 46,
+                SecondaryStat = "Energy Recharge",
+                Passive = "Sky-Piercing Fang"
+            };
 
             string line = "Skyward Blade,Sword,https://vignette.wikia.nocookie.net/gensin-impact/images/0/03/Weapon_Skyward_Blade.png,5,46,Energy Recharge,Sky-Piercing Fang";
             Weapon actual = null;
 
-            // TODO: uncomment this once you have TryParse implemented.
-            //Assert.IsTrue(Weapon.TryParse(line, out actual));
-            Assert.Equals(expected.Name, actual.Name);
-            Assert.Equals(expected.Type, actual.Type);
-            Assert.Equals(expected.BaseAttack, actual.BaseAttack);
-            // TODO: check for the rest of the properties, Image,Rarity,SecondaryStat,Passive
+            Assert.IsTrue(Weapon.TryParse(line, out actual));
+            Assert.AreEqual(expected.Name, actual.Name);
+            Assert.AreEqual(expected.Type, actual.Type);
+            Assert.AreEqual(expected.Image, actual.Image);
+            Assert.AreEqual(expected.Rarity, actual.Rarity);
+            Assert.AreEqual(expected.BaseAttack, actual.BaseAttack);
+            Assert.AreEqual(expected.SecondaryStat, actual.SecondaryStat);
+            Assert.AreEqual(expected.Passive, actual.Passive);
         }
 
         [Test]
         public void Weapon_TryParseInvalidLine_FalseNull()
         {
-            // TODO: use "1,Bulbasaur,A,B,C,65,65", Weapon.TryParse returns false, and Weapon is null.
+            string test = "1,Bulbasaur,A,B,C,65,65";
+
+            Assert.IsFalse(Weapon.TryParse(test, out Weapon result));
+            Assert.IsTrue(result == null);
         }
     }
 }

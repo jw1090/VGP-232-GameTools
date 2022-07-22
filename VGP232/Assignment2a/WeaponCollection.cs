@@ -29,7 +29,7 @@ namespace Assignment2a
             }
         }
 
-        public bool Save(string filename, bool appendToFile)
+        public bool Save(string filename, bool appendToFile = false)
         {
             if(string.IsNullOrEmpty(filename))
             {
@@ -72,6 +72,8 @@ namespace Assignment2a
                 Clear(); // Reset for new data
 
                 // Skip the first line because header does not need to be parsed.
+                string header = reader.ReadLine();
+
                 // (Name,Type,Image,Rarity,BaseAttack,SecondaryStats,Passives)
                 while (reader.Peek() > 0)
                 {
@@ -80,8 +82,6 @@ namespace Assignment2a
                     if (Weapon.TryParse(line, out Weapon weapon))
                     {
                         Add(weapon);
-
-                        Console.WriteLine($"Weapon added - {weapon.Name}");
                     }
                 }
             }
