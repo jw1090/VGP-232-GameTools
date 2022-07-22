@@ -7,7 +7,7 @@ namespace Assignment2a
     [TestFixture]
     public class UnitTests
     {
-        // private WeaponCollection WeaponCollection;
+        private WeaponCollection _weaponCollection;
         private string inputPath;
         private string outputPath;
 
@@ -25,7 +25,7 @@ namespace Assignment2a
         {
             inputPath = CombineToAppPath(INPUT_FILE);
             outputPath = CombineToAppPath(OUTPUT_FILE);
-            // WeaponCollection = new WeaponCollection();
+            _weaponCollection = new WeaponCollection();
         }
 
         [TearDown]
@@ -42,22 +42,22 @@ namespace Assignment2a
         [Test]
         public void WeaponCollection_GetHighestBaseAttack_HighestValue()
         {
-            // Expected Value: 48
-            // TODO: call WeaponCollection.GetHighestBaseAttack() and confirm that it matches the expected value using asserts.
+            _weaponCollection.Load(inputPath);
+            Assert.AreEqual(48, _weaponCollection.GetHighestBaseAttack());
         }
 
         [Test]
         public void WeaponCollection_GetLowestBaseAttack_LowestValue()
         {
-            // Expected Value: 23
-            // TODO: call WeaponCollection.GetLowestBaseAttack() and confirm that it matches the expected value using asserts.
+            _weaponCollection.Load(inputPath);
+            Assert.AreEqual(23, _weaponCollection.GetLowestBaseAttack());
         }
 
-        //[TestCase(WeaponType.Sword, 21)]
-        //public void WeaponCollection_GetAllWeaponsOfType_ListOfWeapons(WeaponType type, int expectedValue)
-        //{
-        //    // TODO: call WeaponCollection.GetAllWeaponsOfType(type) and confirm that the weapons list returns Count matches the expected value using asserts.
-        //}
+        [TestCase(Weapon.WeaponType.Sword, 21)]
+        public void WeaponCollection_GetAllWeaponsOfType_ListOfWeapons(Weapon.WeaponType type, int expectedValue)
+        {
+            Assert.AreEqual(expectedValue, _weaponCollection.GetAllWeaponsOfType(type));
+        }
 
         [TestCase(5, 10)]
         public void WeaponCollection_GetAllWeaponsOfRarity_ListOfWeapons(int stars, int expectedValue)

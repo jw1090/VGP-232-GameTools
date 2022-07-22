@@ -62,8 +62,6 @@ namespace Assignment2a
                 Console.WriteLine($"The file has been saved to {filename}");
             }
 
-            fs.Close();
-
             return true;
         }
 
