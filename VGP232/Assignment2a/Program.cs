@@ -22,12 +22,12 @@ namespace Assignment2a
     {
         public static void Main(string[] args)
         {
+            WeaponCollection results = new WeaponCollection(); // The results to be output to a file or to the console.
+            SortType sortColumnName = SortType.None;
             bool appendToFile = false; // Should we append the file (true), or overwrite (false)?
             bool displayCount = false; // The flag to determine if we display the number of entries.
             bool sortEnabled = false; // The flag to determine if we need to sort the results via name.
             string outputFile = string.Empty; // The path of the output file to save.
-            SortType sortColumnName = SortType.None;
-            WeaponCollection results = new WeaponCollection(); // The results to be output to a file or to the console.
 
             for (int i = 0; i < args.Length; i++)
             {

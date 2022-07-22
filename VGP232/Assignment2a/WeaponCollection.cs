@@ -62,6 +62,8 @@ namespace Assignment2a
                 Console.WriteLine($"The file has been saved to {filename}");
             }
 
+            fs.Close();
+
             return true;
         }
 
@@ -76,8 +78,6 @@ namespace Assignment2a
                 while (reader.Peek() > 0)
                 {
                     string line = reader.ReadLine();
-
-                    
 
                     if (Weapon.TryParse(line, out Weapon weapon))
                     {
