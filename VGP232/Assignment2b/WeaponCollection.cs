@@ -142,23 +142,23 @@ namespace Assignment2b
 
         public bool SaveAsJSON(string path)
         {
+            WeaponCollectionData weaponCollectionData = new WeaponCollectionData();
+
+            foreach (Weapon weapon in this)
+            {
+                weaponCollectionData.Weapons.Add(weapon);
+            }
+
             using (StreamWriter writer = new StreamWriter(fileStream))
             {
-                WeaponCollectionData weaponCollectionData = new WeaponCollectionData();
-
-                foreach (Weapon weapon in this)
-                {
-                    weaponCollectionData.Weapons.Add(weapon);
-                }
-
                 string jsonString = JsonConvert.SerializeObject(weaponCollectionData, Formatting.Indented);
 
                 writer.WriteLine(jsonString);
-
-                Console.WriteLine($"The JSON file has been saved to {path}");
             }
-
             fileStream.Close();
+
+            Console.WriteLine($"The JSON file has been saved to {path}");
+
 
             return true;
         }
@@ -167,8 +167,6 @@ namespace Assignment2b
         {
             using (StreamReader reader = new StreamReader(path))
             {
-                Clear(); // Reset for new data
-
                 while (reader.Peek() > 0)
                 {
                     string line = reader.ReadLine();
@@ -185,22 +183,24 @@ namespace Assignment2b
 
         public bool SaveAsXML(string path)
         {
-            using (StreamWriter streamWriter = new StreamWriter(fileStream))
+            WeaponCollectionData weaponCollectionData = new WeaponCollectionData();
+
+            foreach (Weapon weapon in this)
             {
-                XmlSerializer xmlSerializer = new XmlSerializer(typeof(Weapon));
-
-                foreach (Weapon weapon in this)
-                {
-                    xmlSerializer.Serialize(streamWriter, weapon);
-                    string xmlString = streamWriter.ToString();
-
-                    streamWriter.WriteLine(xmlString);
-                }
-
-                Console.WriteLine($"The XML file has been saved to {path}");
+                weaponCollectionData.Weapons.Add(weapon);
             }
 
+            using (StreamWriter streamWriter = new StreamWriter(fileStream))
+            {
+                XmlSerializer xmlSerializer = new XmlSerializer(typeof(WeaponCollectionData));
+                xmlSerializer.Serialize(streamWriter, weaponCollectionData);
+
+                string xmlString = streamWriter.ToString();
+                streamWriter.WriteLine(xmlString);
+            }
             fileStream.Close();
+
+            Console.WriteLine($"The XML file has been saved to {path}");
 
             return true;
         }
