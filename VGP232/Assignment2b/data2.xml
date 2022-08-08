@@ -1,950 +1,860 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Skyward Blade</Name>
-  <Type>Sword</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/0/03/Weapon_Skyward_Blade.png</Image>
-  <Rarity>5</Rarity>
-  <BaseAttack>46</BaseAttack>
-  <SecondaryStat>Energy Recharge</SecondaryStat>
-  <Passive>Sky-Piercing Fang</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Aquila Favonia</Name>
-  <Type>Sword</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/6/6a/Weapon_Aquila_Favonia.png</Image>
-  <Rarity>5</Rarity>
-  <BaseAttack>48</BaseAttack>
-  <SecondaryStat>Physical DMG Bonus</SecondaryStat>
-  <Passive>Falcon's Defiance</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Blackcliff Longsword</Name>
-  <Type>Sword</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/6/6f/Weapon_Blackcliff_Longsword.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>44</BaseAttack>
-  <SecondaryStat>Physical DMG Bonus</SecondaryStat>
-  <Passive>Press the Advantage</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>The Flute</Name>
-  <Type>Sword</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/6/63/Weapon_The_Flute.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>42</BaseAttack>
-  <SecondaryStat>Base ATK</SecondaryStat>
-  <Passive>Chord</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>The Black Sword</Name>
-  <Type>Sword</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/c/cf/Weapon_The_Black_Sword.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>42</BaseAttack>
-  <SecondaryStat>CRIT Rate</SecondaryStat>
-  <Passive>Justice</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>The Alley Flash</Name>
-  <Type>Sword</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/8/83/Weapon_The_Alley_Flash.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>44</BaseAttack>
-  <SecondaryStat>CRIT Rate</SecondaryStat>
-  <Passive>Itinerant Hero</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Sword of Descension</Name>
-  <Type>Sword</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/1/17/Weapon_Sword_of_Descension.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>39</BaseAttack>
-  <SecondaryStat>ATK</SecondaryStat>
-  <Passive>Descension</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Sacrificial Sword</Name>
-  <Type>Sword</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/a/a0/Weapon_Sacrificial_Sword.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>41</BaseAttack>
-  <SecondaryStat>Energy Recharge</SecondaryStat>
-  <Passive>Composed</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Royal Longsword</Name>
-  <Type>Sword</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/c/cd/Weapon_Royal_Longsword.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>42</BaseAttack>
-  <SecondaryStat>Base ATK</SecondaryStat>
-  <Passive>Focus</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Prototype Rancour</Name>
-  <Type>Sword</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/e/ef/Weapon_Prototype_Rancour.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>44</BaseAttack>
-  <SecondaryStat>Physical DMG Bonus</SecondaryStat>
-  <Passive>Smashed Stone</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Lion's Roar</Name>
-  <Type>Sword</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/e/e6/Weapon_Lion%27s_Roar.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>42</BaseAttack>
-  <SecondaryStat>ATK</SecondaryStat>
-  <Passive>Bane of Fire and Thunder</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Iron Sting</Name>
-  <Type>Sword</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/3/35/Weapon_Iron_Sting.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>42</BaseAttack>
-  <SecondaryStat>Elemental Mastery</SecondaryStat>
-  <Passive>Infusion Stinger</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Favonius Sword</Name>
-  <Type>Sword</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/9/90/Weapon_Favonius_Sword.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>41</BaseAttack>
-  <SecondaryStat>Energy Recharge</SecondaryStat>
-  <Passive>Windfall</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Harbinger of Dawn</Name>
-  <Type>Sword</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/2/23/Weapon_Harbinger_of_Dawn.png</Image>
-  <Rarity>3</Rarity>
-  <BaseAttack>39</BaseAttack>
-  <SecondaryStat>CRIT DMG</SecondaryStat>
-  <Passive>Vigorous</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Skyrider Sword</Name>
-  <Type>Sword</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/3/34/Weapon_Skyrider_Sword.png</Image>
-  <Rarity>3</Rarity>
-  <BaseAttack>38</BaseAttack>
-  <SecondaryStat>Energy Recharge</SecondaryStat>
-  <Passive>Determination</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Fillet Blade</Name>
-  <Type>Sword</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/f/f7/Weapon_Fillet_Blade.png</Image>
-  <Rarity>3</Rarity>
-  <BaseAttack>39</BaseAttack>
-  <SecondaryStat>ATK</SecondaryStat>
-  <Passive>Gash</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Dark Iron Sword</Name>
-  <Type>Sword</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/3/3a/Weapon_Dark_Iron_Sword.png</Image>
-  <Rarity>3</Rarity>
-  <BaseAttack>40</BaseAttack>
-  <SecondaryStat>Elemental Mastery</SecondaryStat>
-  <Passive>Overloaded</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Cool Steel</Name>
-  <Type>Sword</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/9/9c/Weapon_Cool_Steel.png</Image>
-  <Rarity>3</Rarity>
-  <BaseAttack>39</BaseAttack>
-  <SecondaryStat>ATK</SecondaryStat>
-  <Passive>Bane of Water and Ice</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Traveler's Handy Sword</Name>
-  <Type>Sword</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/c/c9/Weapon_Traveler%27s_Handy_Sword.png</Image>
-  <Rarity>3</Rarity>
-  <BaseAttack>40</BaseAttack>
-  <SecondaryStat>DEF</SecondaryStat>
-  <Passive>Journey</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Silver Sword</Name>
-  <Type>Sword</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/3/32/Weapon_Silver_Sword.png</Image>
-  <Rarity>2</Rarity>
-  <BaseAttack>33</BaseAttack>
-  <SecondaryStat>None</SecondaryStat>
-  <Passive>None</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Dull Blade</Name>
-  <Type>Sword</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/2/2f/Weapon_Dull_Blade.png</Image>
-  <Rarity>1</Rarity>
-  <BaseAttack>23</BaseAttack>
-  <SecondaryStat>None</SecondaryStat>
-  <Passive>None</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Unwu's Iris Rift</Name>
-  <Type>Polearm</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/9/93/Weapon_Kunwu%27s_Iris_Rift.png</Image>
-  <Rarity>5</Rarity>
-  <BaseAttack>46</BaseAttack>
-  <SecondaryStat>Base ATK</SecondaryStat>
-  <Passive>Rainbow-Piercing Stinger</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Primordial Jade Winged-Spear</Name>
-  <Type>Polearm</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/8/80/Weapon_Primordial_Jade_Winged-Spear.png</Image>
-  <Rarity>5</Rarity>
-  <BaseAttack>48</BaseAttack>
-  <SecondaryStat>CRIT Rate</SecondaryStat>
-  <Passive>Eagle Spear of Justice</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Blackcliff Pole</Name>
-  <Type>Polearm</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/d/d5/Weapon_Blackcliff_Pole.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>42</BaseAttack>
-  <SecondaryStat>CRIT DMG</SecondaryStat>
-  <Passive>Press the Advantage</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Crescent Pike</Name>
-  <Type>Polearm</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/4/4c/Weapon_Crescent_Pike.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>44</BaseAttack>
-  <SecondaryStat>Physical DMG Bonus</SecondaryStat>
-  <Passive>Infusion Needle</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Deathmatch</Name>
-  <Type>Polearm</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/6/69/Weapon_Deathmatch.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>41</BaseAttack>
-  <SecondaryStat>CRIT Rate</SecondaryStat>
-  <Passive>Gladiator</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Dragon's Bane</Name>
-  <Type>Polearm</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/2/24/Weapon_Dragon%27s_Bane.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>41</BaseAttack>
-  <SecondaryStat>Elemental Mastery</SecondaryStat>
-  <Passive>Bane of Flame and Water</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Favonius Lance</Name>
-  <Type>Polearm</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/5/57/Weapon_Favonius_Lance.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>44</BaseAttack>
-  <SecondaryStat>Energy Recharge</SecondaryStat>
-  <Passive>Windfall</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Lithic Spear</Name>
-  <Type>Polearm</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/2/2a/Weapon_Lithic_Spear.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>42</BaseAttack>
-  <SecondaryStat>Physical DMG Bonus</SecondaryStat>
-  <Passive>Lithic Axiom - Subjugating Evil</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Prototype Grudge</Name>
-  <Type>Polearm</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/7/7a/Weapon_Prototype_Grudge.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>42</BaseAttack>
-  <SecondaryStat>Energy Recharge</SecondaryStat>
-  <Passive>Magic Affinity</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Black Tassel</Name>
-  <Type>Polearm</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/4/43/Weapon_Black_Tassel.png</Image>
-  <Rarity>3</Rarity>
-  <BaseAttack>38</BaseAttack>
-  <SecondaryStat>HP</SecondaryStat>
-  <Passive>Bane of the Soft</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Halberd</Name>
-  <Type>Polearm</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/4/41/Weapon_Halberd.png</Image>
-  <Rarity>3</Rarity>
-  <BaseAttack>40</BaseAttack>
-  <SecondaryStat>Base ATK</SecondaryStat>
-  <Passive>Heavy</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>White Tassel</Name>
-  <Type>Polearm</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/1/1f/Weapon_White_Tassel.png</Image>
-  <Rarity>3</Rarity>
-  <BaseAttack>39</BaseAttack>
-  <SecondaryStat>CRIT Rate</SecondaryStat>
-  <Passive>Sharp</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Iron Point</Name>
-  <Type>Polearm</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/2/25/Weapon_Iron_Point.png</Image>
-  <Rarity>2</Rarity>
-  <BaseAttack>33</BaseAttack>
-  <SecondaryStat>None</SecondaryStat>
-  <Passive>None</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Beginner's Protector</Name>
-  <Type>Polearm</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/f/fc/Weapon_Beginner%27s_Protector.png</Image>
-  <Rarity>1</Rarity>
-  <BaseAttack>23</BaseAttack>
-  <SecondaryStat>None</SecondaryStat>
-  <Passive>None</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Lf's Gravestone</Name>
-  <Type>Claymore</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/4/4f/Weapon_Wolf%27s_Gravestone.png</Image>
-  <Rarity>5</Rarity>
-  <BaseAttack>46</BaseAttack>
-  <SecondaryStat>Base ATK</SecondaryStat>
-  <Passive>Wolfish Tracker</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Skyward Pride</Name>
-  <Type>Claymore</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/0/0b/Weapon_Skyward_Pride.png</Image>
-  <Rarity>5</Rarity>
-  <BaseAttack>48</BaseAttack>
-  <SecondaryStat>Energy Recharge</SecondaryStat>
-  <Passive>Sky-ripping Dragon Spine</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Rainslasher</Name>
-  <Type>Claymore</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/d/d4/Weapon_Rainslasher.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>42</BaseAttack>
-  <SecondaryStat>Elemental Mastery</SecondaryStat>
-  <Passive>Bane of Storm and Tide</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Whiteblind</Name>
-  <Type>Claymore</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/0/04/Weapon_Whiteblind.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>42</BaseAttack>
-  <SecondaryStat>Base DEF</SecondaryStat>
-  <Passive>Infusion Blade</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>The Bell</Name>
-  <Type>Claymore</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/6/6e/Weapon_The_Bell.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>42</BaseAttack>
-  <SecondaryStat>Energy Recharge</SecondaryStat>
-  <Passive>Rebellious Guardian</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Serpent Spine</Name>
-  <Type>Claymore</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/8/88/Weapon_Serpent_Spine.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>42</BaseAttack>
-  <SecondaryStat>CRIT Rate</SecondaryStat>
-  <Passive>Wavesplitter</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Sacrificial Greatsword</Name>
-  <Type>Claymore</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/1/17/Weapon_Sacrificial_Greatsword.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>44</BaseAttack>
-  <SecondaryStat>Energy Recharge</SecondaryStat>
-  <Passive>Composed</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Blackcliff Slasher</Name>
-  <Type>Claymore</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/d/d7/Weapon_Blackcliff_Slasher.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>42</BaseAttack>
-  <SecondaryStat>CRIT DMG</SecondaryStat>
-  <Passive>Press the Advantage</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Prototype Aminus</Name>
-  <Type>Claymore</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/6/68/Weapon_Prototype_Aminus.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>44</BaseAttack>
-  <SecondaryStat>Base ATK</SecondaryStat>
-  <Passive>Crush</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Lithic Blade</Name>
-  <Type>Claymore</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/3/3a/Weapon_Lithic_Blade.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>41</BaseAttack>
-  <SecondaryStat>CRIT DMG</SecondaryStat>
-  <Passive>Lithic Axiom - Unity</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Favonius Greatsword</Name>
-  <Type>Claymore</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/9/9c/Weapon_Favonius_Greatsword.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>41</BaseAttack>
-  <SecondaryStat>Energy Recharge</SecondaryStat>
-  <Passive>Critical Charge</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Royal Greatsword</Name>
-  <Type>Claymore</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/b/bf/Weapon_Royal_Greatsword.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>44</BaseAttack>
-  <SecondaryStat>Base ATK</SecondaryStat>
-  <Passive>Focus</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Quartz</Name>
-  <Type>Claymore</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/7/71/Weapon_Quartz.png</Image>
-  <Rarity>3</Rarity>
-  <BaseAttack>40</BaseAttack>
-  <SecondaryStat>Elemental Mastery</SecondaryStat>
-  <Passive>Residual Heat</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Bloodtainted Greatsword</Name>
-  <Type>Claymore</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/4/4a/Weapon_Bloodtainted_Greatsword.png</Image>
-  <Rarity>3</Rarity>
-  <BaseAttack>38</BaseAttack>
-  <SecondaryStat>Elemental Mastery</SecondaryStat>
-  <Passive>Bane of Fire and Thunder</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Skyrider Greatsword</Name>
-  <Type>Claymore</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/6/6e/Weapon_Skyrider_Greatsword.png</Image>
-  <Rarity>3</Rarity>
-  <BaseAttack>39</BaseAttack>
-  <SecondaryStat>Physical DMG Bonus</SecondaryStat>
-  <Passive>Courage</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Ferrous Shadow</Name>
-  <Type>Claymore</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/e/e9/Weapon_Ferrous_Shadow.png</Image>
-  <Rarity>3</Rarity>
-  <BaseAttack>39</BaseAttack>
-  <SecondaryStat>Base HP</SecondaryStat>
-  <Passive>Unbending</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>White Iron Greatsword</Name>
-  <Type>Claymore</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/5/56/Weapon_White_Iron_Greatsword.png</Image>
-  <Rarity>3</Rarity>
-  <BaseAttack>39</BaseAttack>
-  <SecondaryStat>DEF</SecondaryStat>
-  <Passive>Cull the Weak</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Debate Club</Name>
-  <Type>Claymore</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/7/74/Weapon_Debate_Club.png</Image>
-  <Rarity>3</Rarity>
-  <BaseAttack>39</BaseAttack>
-  <SecondaryStat>ATK</SecondaryStat>
-  <Passive>Blunt Conclusion</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Old Merc's Pal</Name>
-  <Type>Claymore</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/0/0b/Weapon_Old_Merc%27s_Pal.png</Image>
-  <Rarity>2</Rarity>
-  <BaseAttack>33</BaseAttack>
-  <SecondaryStat>None</SecondaryStat>
-  <Passive>None</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Waster Greatsword</Name>
-  <Type>Claymore</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/4/4c/Weapon_Waster_Greatsword.png</Image>
-  <Rarity>1</Rarity>
-  <BaseAttack>23</BaseAttack>
-  <SecondaryStat>None</SecondaryStat>
-  <Passive>None</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Lost Prayer to the Sacred Winds</Name>
-  <Type>Catalyst</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/9/98/Weapon_Lost_Prayer_to_the_Sacred_Winds.png</Image>
-  <Rarity>5</Rarity>
-  <BaseAttack>46</BaseAttack>
-  <SecondaryStat>CRIT Rate</SecondaryStat>
-  <Passive>Boundless Blessing</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Skyward Atlas</Name>
-  <Type>Catalyst</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/3/33/Weapon_Skyward_Atlas.png</Image>
-  <Rarity>5</Rarity>
-  <BaseAttack>48</BaseAttack>
-  <SecondaryStat>Base ATK</SecondaryStat>
-  <Passive>Wandering Clouds</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Wine and Song</Name>
-  <Type>Catalyst</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/c/c6/Weapon_Wine_and_Song.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>42</BaseAttack>
-  <SecondaryStat>Energy Recharge</SecondaryStat>
-  <Passive>Wind in the Square</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Blackcliff Amulet</Name>
-  <Type>Catalyst</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/2/21/Weapon_Blackcliff_Amulet.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>42</BaseAttack>
-  <SecondaryStat>Energy Recharge</SecondaryStat>
-  <Passive>Exorcise</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Eye of Perception</Name>
-  <Type>Catalyst</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/6/6c/Weapon_Eye_of_Perception.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>41</BaseAttack>
-  <SecondaryStat>Base ATK</SecondaryStat>
-  <Passive>Echo</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Favonius Codex</Name>
-  <Type>Catalyst</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/3/36/Weapon_Favonius_Codex.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>42</BaseAttack>
-  <SecondaryStat>Energy Recharge</SecondaryStat>
-  <Passive>Critical Charge</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Mappa Mare</Name>
-  <Type>Catalyst</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/4/4d/Weapon_Mappa_Mare.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>44</BaseAttack>
-  <SecondaryStat>Elemental Mastery</SecondaryStat>
-  <Passive>Infusion Scroll</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>The Widsith</Name>
-  <Type>Catalyst</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/f/f0/Weapon_The_Widsith.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>42</BaseAttack>
-  <SecondaryStat>CRIT DMG</SecondaryStat>
-  <Passive>Debut</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Solar Pearl</Name>
-  <Type>Catalyst</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/f/fc/Weapon_Solar_Pearl.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>42</BaseAttack>
-  <SecondaryStat>CRIT Rate</SecondaryStat>
-  <Passive>Solar Shine</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Prototype Malice</Name>
-  <Type>Catalyst</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/3/32/Weapon_Prototype_Malice.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>41</BaseAttack>
-  <SecondaryStat>Base HP</SecondaryStat>
-  <Passive>Golden Plating</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Royal Grimoire</Name>
-  <Type>Catalyst</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/9/99/Weapon_Royal_Grimoire.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>44</BaseAttack>
-  <SecondaryStat>Base ATK</SecondaryStat>
-  <Passive>Energy Blast</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Sacrificial Fragments</Name>
-  <Type>Catalyst</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/6/6c/Weapon_Sacrificial_Fragments.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>41</BaseAttack>
-  <SecondaryStat>Elemental Mastery</SecondaryStat>
-  <Passive>Composed</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Twin Nephrite</Name>
-  <Type>Catalyst</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/e/e3/Weapon_Twin_Nephrite.png</Image>
-  <Rarity>3</Rarity>
-  <BaseAttack>40</BaseAttack>
-  <SecondaryStat>CRIT Rate</SecondaryStat>
-  <Passive>Guerilla Tactic</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Thrilling Tales of Dragon Slayers</Name>
-  <Type>Catalyst</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/1/19/Weapon_Thrilling_Tales_of_Dragon_Slayers.png</Image>
-  <Rarity>3</Rarity>
-  <BaseAttack>39</BaseAttack>
-  <SecondaryStat>Base HP</SecondaryStat>
-  <Passive>Legacy</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Amber Catalyst</Name>
-  <Type>Catalyst</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/9/97/Weapon_Amber_Catalyst.png</Image>
-  <Rarity>3</Rarity>
-  <BaseAttack>40</BaseAttack>
-  <SecondaryStat>Elemental Mastery</SecondaryStat>
-  <Passive>Elemental Mastery</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Magic Guide</Name>
-  <Type>Catalyst</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/3/39/Weapon_Magic_Guide.png</Image>
-  <Rarity>3</Rarity>
-  <BaseAttack>38</BaseAttack>
-  <SecondaryStat>Elemental Mastery</SecondaryStat>
-  <Passive>Bane of Storm and Tide</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Otherworldly Story</Name>
-  <Type>Catalyst</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/1/11/Weapon_Otherworldly_Story.png</Image>
-  <Rarity>3</Rarity>
-  <BaseAttack>39</BaseAttack>
-  <SecondaryStat>Energy Recharge</SecondaryStat>
-  <Passive>Energy Shower</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Emerald Orb</Name>
-  <Type>Catalyst</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/7/7c/Weapon_Emerald_Orb.png</Image>
-  <Rarity>3</Rarity>
-  <BaseAttack>40</BaseAttack>
-  <SecondaryStat>Elemental Mastery</SecondaryStat>
-  <Passive>Rapids</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Pocket Grimoire</Name>
-  <Type>Catalyst</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/1/16/Weapon_Pocket_Grimoire.png</Image>
-  <Rarity>2</Rarity>
-  <BaseAttack>33</BaseAttack>
-  <SecondaryStat>None</SecondaryStat>
-  <Passive>None</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Apprentice's Notes</Name>
-  <Type>Catalyst</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/c/cf/Weapon_Apprentice%27s_Notes.png</Image>
-  <Rarity>1</Rarity>
-  <BaseAttack>23</BaseAttack>
-  <SecondaryStat>None</SecondaryStat>
-  <Passive>None</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Amos' Bow</Name>
-  <Type>Bow</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/d/de/Weapon_Amos%27_Bow.png</Image>
-  <Rarity>5</Rarity>
-  <BaseAttack>46</BaseAttack>
-  <SecondaryStat>Base ATK</SecondaryStat>
-  <Passive>Strong-Willed</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Skyward Harp</Name>
-  <Type>Bow</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/1/19/Weapon_Skyward_Harp.png</Image>
-  <Rarity>5</Rarity>
-  <BaseAttack>45</BaseAttack>
-  <SecondaryStat>CRIT Rate</SecondaryStat>
-  <Passive>Echoing Ballad</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Alley Hunter</Name>
-  <Type>Bow</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/0/0a/Weapon_Alley_Hunter.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>41</BaseAttack>
-  <SecondaryStat>CRIT Rate</SecondaryStat>
-  <Passive>Urban Guerrilla</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>The Stringless</Name>
-  <Type>Bow</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/7/71/Weapon_The_Stringless.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>42</BaseAttack>
-  <SecondaryStat>Elemental Mastery</SecondaryStat>
-  <Passive>Arrowless Song</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Sacrificial Bow</Name>
-  <Type>Bow</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/e/ec/Weapon_Sacrificial_Bow.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>43</BaseAttack>
-  <SecondaryStat>Energy Recharge</SecondaryStat>
-  <Passive>Composed</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Rust</Name>
-  <Type>Bow</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/1/1c/Weapon_Rust.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>42</BaseAttack>
-  <SecondaryStat>Base ATK</SecondaryStat>
-  <Passive>Rapid Firing</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Royal Bow</Name>
-  <Type>Bow</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/9/99/Weapon_Royal_Bow.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>42</BaseAttack>
-  <SecondaryStat>ATK</SecondaryStat>
-  <Passive>Focus</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>The Viridescent Hunt</Name>
-  <Type>Bow</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/f/ff/Weapon_The_Viridescent_Hunt.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>42</BaseAttack>
-  <SecondaryStat>CRIT Rate</SecondaryStat>
-  <Passive>Verdant Wind</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Prototype Crescent</Name>
-  <Type>Bow</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/4/43/Weapon_Prototype_Crescent.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>42</BaseAttack>
-  <SecondaryStat>ATK</SecondaryStat>
-  <Passive>Unreturning</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Favonius Warbow</Name>
-  <Type>Bow</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/8/85/Weapon_Favonius_Warbow.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>41</BaseAttack>
-  <SecondaryStat>Energy Recharge</SecondaryStat>
-  <Passive>Windfall</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Compound Bow</Name>
-  <Type>Bow</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/3/32/Weapon_Compound_Bow.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>41</BaseAttack>
-  <SecondaryStat>Physical DMG Bonus</SecondaryStat>
-  <Passive>Infusion Arrow</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Blackcliff Warbow</Name>
-  <Type>Bow</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/b/b8/Weapon_Blackcliff_Warbow.png</Image>
-  <Rarity>4</Rarity>
-  <BaseAttack>44</BaseAttack>
-  <SecondaryStat>Base ATK</SecondaryStat>
-  <Passive>Press the Advantage</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Raven Bow</Name>
-  <Type>Bow</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/d/d0/Weapon_Raven_Bow.png</Image>
-  <Rarity>3</Rarity>
-  <BaseAttack>40</BaseAttack>
-  <SecondaryStat>Elemental Mastery</SecondaryStat>
-  <Passive>Bane of Flame and Water</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Messenger</Name>
-  <Type>Bow</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/3/38/Weapon_Messenger.png</Image>
-  <Rarity>3</Rarity>
-  <BaseAttack>40</BaseAttack>
-  <SecondaryStat>CRIT DMG</SecondaryStat>
-  <Passive>Archer's Message</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Ebony Bow</Name>
-  <Type>Bow</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/a/a1/Weapon_Ebony_Bow.png</Image>
-  <Rarity>3</Rarity>
-  <BaseAttack>40</BaseAttack>
-  <SecondaryStat>Base ATK</SecondaryStat>
-  <Passive>Decimate</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Sharpshooter's Oath</Name>
-  <Type>Bow</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/5/52/Weapon_Sharpshooter%27s_Oath.png</Image>
-  <Rarity>3</Rarity>
-  <BaseAttack>39</BaseAttack>
-  <SecondaryStat>CRIT DMG</SecondaryStat>
-  <Passive>Precise</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Slingshot</Name>
-  <Type>Bow</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/c/ca/Weapon_Slingshot.png</Image>
-  <Rarity>3</Rarity>
-  <BaseAttack>38</BaseAttack>
-  <SecondaryStat>CRIT Rate</SecondaryStat>
-  <Passive>Slingshot</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Recurve Bow</Name>
-  <Type>Bow</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/b/b5/Weapon_Recurve_Bow.png</Image>
-  <Rarity>3</Rarity>
-  <BaseAttack>38</BaseAttack>
-  <SecondaryStat>Base HP</SecondaryStat>
-  <Passive>Cull the Weak</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Seasoned Hunter's Bow</Name>
-  <Type>Bow</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/8/82/Weapon_Seasoned_Hunter%27s_Bow.png</Image>
-  <Rarity>2</Rarity>
-  <BaseAttack>33</BaseAttack>
-  <SecondaryStat>None</SecondaryStat>
-  <Passive>None</Passive>
-</Weapon>System.IO.StreamWriter
-<?xml version="1.0" encoding="utf-8"?>
-<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Hunter's Bow</Name>
-  <Type>Bow</Type>
-  <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/4/44/Weapon_Hunter%27s_Bow.png</Image>
-  <Rarity>1</Rarity>
-  <BaseAttack>23</BaseAttack>
-  <SecondaryStat>None</SecondaryStat>
-  <Passive>None</Passive>
-</Weapon>System.IO.StreamWriter
+<WeaponCollectionData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Weapons>
+    <Weapon>
+      <Name>Skyward Blade</Name>
+      <Type>Sword</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/0/03/Weapon_Skyward_Blade.png</Image>
+      <Rarity>5</Rarity>
+      <BaseAttack>46</BaseAttack>
+      <SecondaryStat>Energy Recharge</SecondaryStat>
+      <Passive>Sky-Piercing Fang</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Aquila Favonia</Name>
+      <Type>Sword</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/6/6a/Weapon_Aquila_Favonia.png</Image>
+      <Rarity>5</Rarity>
+      <BaseAttack>48</BaseAttack>
+      <SecondaryStat>Physical DMG Bonus</SecondaryStat>
+      <Passive>Falcon's Defiance</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Blackcliff Longsword</Name>
+      <Type>Sword</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/6/6f/Weapon_Blackcliff_Longsword.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>44</BaseAttack>
+      <SecondaryStat>Physical DMG Bonus</SecondaryStat>
+      <Passive>Press the Advantage</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>The Flute</Name>
+      <Type>Sword</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/6/63/Weapon_The_Flute.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>42</BaseAttack>
+      <SecondaryStat>Base ATK</SecondaryStat>
+      <Passive>Chord</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>The Black Sword</Name>
+      <Type>Sword</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/c/cf/Weapon_The_Black_Sword.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>42</BaseAttack>
+      <SecondaryStat>CRIT Rate</SecondaryStat>
+      <Passive>Justice</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>The Alley Flash</Name>
+      <Type>Sword</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/8/83/Weapon_The_Alley_Flash.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>44</BaseAttack>
+      <SecondaryStat>CRIT Rate</SecondaryStat>
+      <Passive>Itinerant Hero</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Sword of Descension</Name>
+      <Type>Sword</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/1/17/Weapon_Sword_of_Descension.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>39</BaseAttack>
+      <SecondaryStat>ATK</SecondaryStat>
+      <Passive>Descension</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Sacrificial Sword</Name>
+      <Type>Sword</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/a/a0/Weapon_Sacrificial_Sword.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>41</BaseAttack>
+      <SecondaryStat>Energy Recharge</SecondaryStat>
+      <Passive>Composed</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Royal Longsword</Name>
+      <Type>Sword</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/c/cd/Weapon_Royal_Longsword.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>42</BaseAttack>
+      <SecondaryStat>Base ATK</SecondaryStat>
+      <Passive>Focus</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Prototype Rancour</Name>
+      <Type>Sword</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/e/ef/Weapon_Prototype_Rancour.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>44</BaseAttack>
+      <SecondaryStat>Physical DMG Bonus</SecondaryStat>
+      <Passive>Smashed Stone</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Lion's Roar</Name>
+      <Type>Sword</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/e/e6/Weapon_Lion%27s_Roar.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>42</BaseAttack>
+      <SecondaryStat>ATK</SecondaryStat>
+      <Passive>Bane of Fire and Thunder</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Iron Sting</Name>
+      <Type>Sword</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/3/35/Weapon_Iron_Sting.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>42</BaseAttack>
+      <SecondaryStat>Elemental Mastery</SecondaryStat>
+      <Passive>Infusion Stinger</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Favonius Sword</Name>
+      <Type>Sword</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/9/90/Weapon_Favonius_Sword.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>41</BaseAttack>
+      <SecondaryStat>Energy Recharge</SecondaryStat>
+      <Passive>Windfall</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Harbinger of Dawn</Name>
+      <Type>Sword</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/2/23/Weapon_Harbinger_of_Dawn.png</Image>
+      <Rarity>3</Rarity>
+      <BaseAttack>39</BaseAttack>
+      <SecondaryStat>CRIT DMG</SecondaryStat>
+      <Passive>Vigorous</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Skyrider Sword</Name>
+      <Type>Sword</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/3/34/Weapon_Skyrider_Sword.png</Image>
+      <Rarity>3</Rarity>
+      <BaseAttack>38</BaseAttack>
+      <SecondaryStat>Energy Recharge</SecondaryStat>
+      <Passive>Determination</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Fillet Blade</Name>
+      <Type>Sword</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/f/f7/Weapon_Fillet_Blade.png</Image>
+      <Rarity>3</Rarity>
+      <BaseAttack>39</BaseAttack>
+      <SecondaryStat>ATK</SecondaryStat>
+      <Passive>Gash</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Dark Iron Sword</Name>
+      <Type>Sword</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/3/3a/Weapon_Dark_Iron_Sword.png</Image>
+      <Rarity>3</Rarity>
+      <BaseAttack>40</BaseAttack>
+      <SecondaryStat>Elemental Mastery</SecondaryStat>
+      <Passive>Overloaded</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Cool Steel</Name>
+      <Type>Sword</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/9/9c/Weapon_Cool_Steel.png</Image>
+      <Rarity>3</Rarity>
+      <BaseAttack>39</BaseAttack>
+      <SecondaryStat>ATK</SecondaryStat>
+      <Passive>Bane of Water and Ice</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Traveler's Handy Sword</Name>
+      <Type>Sword</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/c/c9/Weapon_Traveler%27s_Handy_Sword.png</Image>
+      <Rarity>3</Rarity>
+      <BaseAttack>40</BaseAttack>
+      <SecondaryStat>DEF</SecondaryStat>
+      <Passive>Journey</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Silver Sword</Name>
+      <Type>Sword</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/3/32/Weapon_Silver_Sword.png</Image>
+      <Rarity>2</Rarity>
+      <BaseAttack>33</BaseAttack>
+      <SecondaryStat>None</SecondaryStat>
+      <Passive>None</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Dull Blade</Name>
+      <Type>Sword</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/2/2f/Weapon_Dull_Blade.png</Image>
+      <Rarity>1</Rarity>
+      <BaseAttack>23</BaseAttack>
+      <SecondaryStat>None</SecondaryStat>
+      <Passive>None</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Unwu's Iris Rift</Name>
+      <Type>Polearm</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/9/93/Weapon_Kunwu%27s_Iris_Rift.png</Image>
+      <Rarity>5</Rarity>
+      <BaseAttack>46</BaseAttack>
+      <SecondaryStat>Base ATK</SecondaryStat>
+      <Passive>Rainbow-Piercing Stinger</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Primordial Jade Winged-Spear</Name>
+      <Type>Polearm</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/8/80/Weapon_Primordial_Jade_Winged-Spear.png</Image>
+      <Rarity>5</Rarity>
+      <BaseAttack>48</BaseAttack>
+      <SecondaryStat>CRIT Rate</SecondaryStat>
+      <Passive>Eagle Spear of Justice</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Blackcliff Pole</Name>
+      <Type>Polearm</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/d/d5/Weapon_Blackcliff_Pole.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>42</BaseAttack>
+      <SecondaryStat>CRIT DMG</SecondaryStat>
+      <Passive>Press the Advantage</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Crescent Pike</Name>
+      <Type>Polearm</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/4/4c/Weapon_Crescent_Pike.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>44</BaseAttack>
+      <SecondaryStat>Physical DMG Bonus</SecondaryStat>
+      <Passive>Infusion Needle</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Deathmatch</Name>
+      <Type>Polearm</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/6/69/Weapon_Deathmatch.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>41</BaseAttack>
+      <SecondaryStat>CRIT Rate</SecondaryStat>
+      <Passive>Gladiator</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Dragon's Bane</Name>
+      <Type>Polearm</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/2/24/Weapon_Dragon%27s_Bane.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>41</BaseAttack>
+      <SecondaryStat>Elemental Mastery</SecondaryStat>
+      <Passive>Bane of Flame and Water</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Favonius Lance</Name>
+      <Type>Polearm</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/5/57/Weapon_Favonius_Lance.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>44</BaseAttack>
+      <SecondaryStat>Energy Recharge</SecondaryStat>
+      <Passive>Windfall</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Lithic Spear</Name>
+      <Type>Polearm</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/2/2a/Weapon_Lithic_Spear.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>42</BaseAttack>
+      <SecondaryStat>Physical DMG Bonus</SecondaryStat>
+      <Passive>Lithic Axiom - Subjugating Evil</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Prototype Grudge</Name>
+      <Type>Polearm</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/7/7a/Weapon_Prototype_Grudge.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>42</BaseAttack>
+      <SecondaryStat>Energy Recharge</SecondaryStat>
+      <Passive>Magic Affinity</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Black Tassel</Name>
+      <Type>Polearm</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/4/43/Weapon_Black_Tassel.png</Image>
+      <Rarity>3</Rarity>
+      <BaseAttack>38</BaseAttack>
+      <SecondaryStat>HP</SecondaryStat>
+      <Passive>Bane of the Soft</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Halberd</Name>
+      <Type>Polearm</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/4/41/Weapon_Halberd.png</Image>
+      <Rarity>3</Rarity>
+      <BaseAttack>40</BaseAttack>
+      <SecondaryStat>Base ATK</SecondaryStat>
+      <Passive>Heavy</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>White Tassel</Name>
+      <Type>Polearm</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/1/1f/Weapon_White_Tassel.png</Image>
+      <Rarity>3</Rarity>
+      <BaseAttack>39</BaseAttack>
+      <SecondaryStat>CRIT Rate</SecondaryStat>
+      <Passive>Sharp</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Iron Point</Name>
+      <Type>Polearm</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/2/25/Weapon_Iron_Point.png</Image>
+      <Rarity>2</Rarity>
+      <BaseAttack>33</BaseAttack>
+      <SecondaryStat>None</SecondaryStat>
+      <Passive>None</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Beginner's Protector</Name>
+      <Type>Polearm</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/f/fc/Weapon_Beginner%27s_Protector.png</Image>
+      <Rarity>1</Rarity>
+      <BaseAttack>23</BaseAttack>
+      <SecondaryStat>None</SecondaryStat>
+      <Passive>None</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Lf's Gravestone</Name>
+      <Type>Claymore</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/4/4f/Weapon_Wolf%27s_Gravestone.png</Image>
+      <Rarity>5</Rarity>
+      <BaseAttack>46</BaseAttack>
+      <SecondaryStat>Base ATK</SecondaryStat>
+      <Passive>Wolfish Tracker</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Skyward Pride</Name>
+      <Type>Claymore</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/0/0b/Weapon_Skyward_Pride.png</Image>
+      <Rarity>5</Rarity>
+      <BaseAttack>48</BaseAttack>
+      <SecondaryStat>Energy Recharge</SecondaryStat>
+      <Passive>Sky-ripping Dragon Spine</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Rainslasher</Name>
+      <Type>Claymore</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/d/d4/Weapon_Rainslasher.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>42</BaseAttack>
+      <SecondaryStat>Elemental Mastery</SecondaryStat>
+      <Passive>Bane of Storm and Tide</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Whiteblind</Name>
+      <Type>Claymore</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/0/04/Weapon_Whiteblind.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>42</BaseAttack>
+      <SecondaryStat>Base DEF</SecondaryStat>
+      <Passive>Infusion Blade</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>The Bell</Name>
+      <Type>Claymore</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/6/6e/Weapon_The_Bell.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>42</BaseAttack>
+      <SecondaryStat>Energy Recharge</SecondaryStat>
+      <Passive>Rebellious Guardian</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Serpent Spine</Name>
+      <Type>Claymore</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/8/88/Weapon_Serpent_Spine.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>42</BaseAttack>
+      <SecondaryStat>CRIT Rate</SecondaryStat>
+      <Passive>Wavesplitter</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Sacrificial Greatsword</Name>
+      <Type>Claymore</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/1/17/Weapon_Sacrificial_Greatsword.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>44</BaseAttack>
+      <SecondaryStat>Energy Recharge</SecondaryStat>
+      <Passive>Composed</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Blackcliff Slasher</Name>
+      <Type>Claymore</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/d/d7/Weapon_Blackcliff_Slasher.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>42</BaseAttack>
+      <SecondaryStat>CRIT DMG</SecondaryStat>
+      <Passive>Press the Advantage</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Prototype Aminus</Name>
+      <Type>Claymore</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/6/68/Weapon_Prototype_Aminus.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>44</BaseAttack>
+      <SecondaryStat>Base ATK</SecondaryStat>
+      <Passive>Crush</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Lithic Blade</Name>
+      <Type>Claymore</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/3/3a/Weapon_Lithic_Blade.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>41</BaseAttack>
+      <SecondaryStat>CRIT DMG</SecondaryStat>
+      <Passive>Lithic Axiom - Unity</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Favonius Greatsword</Name>
+      <Type>Claymore</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/9/9c/Weapon_Favonius_Greatsword.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>41</BaseAttack>
+      <SecondaryStat>Energy Recharge</SecondaryStat>
+      <Passive>Critical Charge</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Royal Greatsword</Name>
+      <Type>Claymore</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/b/bf/Weapon_Royal_Greatsword.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>44</BaseAttack>
+      <SecondaryStat>Base ATK</SecondaryStat>
+      <Passive>Focus</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Quartz</Name>
+      <Type>Claymore</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/7/71/Weapon_Quartz.png</Image>
+      <Rarity>3</Rarity>
+      <BaseAttack>40</BaseAttack>
+      <SecondaryStat>Elemental Mastery</SecondaryStat>
+      <Passive>Residual Heat</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Bloodtainted Greatsword</Name>
+      <Type>Claymore</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/4/4a/Weapon_Bloodtainted_Greatsword.png</Image>
+      <Rarity>3</Rarity>
+      <BaseAttack>38</BaseAttack>
+      <SecondaryStat>Elemental Mastery</SecondaryStat>
+      <Passive>Bane of Fire and Thunder</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Skyrider Greatsword</Name>
+      <Type>Claymore</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/6/6e/Weapon_Skyrider_Greatsword.png</Image>
+      <Rarity>3</Rarity>
+      <BaseAttack>39</BaseAttack>
+      <SecondaryStat>Physical DMG Bonus</SecondaryStat>
+      <Passive>Courage</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Ferrous Shadow</Name>
+      <Type>Claymore</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/e/e9/Weapon_Ferrous_Shadow.png</Image>
+      <Rarity>3</Rarity>
+      <BaseAttack>39</BaseAttack>
+      <SecondaryStat>Base HP</SecondaryStat>
+      <Passive>Unbending</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>White Iron Greatsword</Name>
+      <Type>Claymore</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/5/56/Weapon_White_Iron_Greatsword.png</Image>
+      <Rarity>3</Rarity>
+      <BaseAttack>39</BaseAttack>
+      <SecondaryStat>DEF</SecondaryStat>
+      <Passive>Cull the Weak</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Debate Club</Name>
+      <Type>Claymore</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/7/74/Weapon_Debate_Club.png</Image>
+      <Rarity>3</Rarity>
+      <BaseAttack>39</BaseAttack>
+      <SecondaryStat>ATK</SecondaryStat>
+      <Passive>Blunt Conclusion</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Old Merc's Pal</Name>
+      <Type>Claymore</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/0/0b/Weapon_Old_Merc%27s_Pal.png</Image>
+      <Rarity>2</Rarity>
+      <BaseAttack>33</BaseAttack>
+      <SecondaryStat>None</SecondaryStat>
+      <Passive>None</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Waster Greatsword</Name>
+      <Type>Claymore</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/4/4c/Weapon_Waster_Greatsword.png</Image>
+      <Rarity>1</Rarity>
+      <BaseAttack>23</BaseAttack>
+      <SecondaryStat>None</SecondaryStat>
+      <Passive>None</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Lost Prayer to the Sacred Winds</Name>
+      <Type>Catalyst</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/9/98/Weapon_Lost_Prayer_to_the_Sacred_Winds.png</Image>
+      <Rarity>5</Rarity>
+      <BaseAttack>46</BaseAttack>
+      <SecondaryStat>CRIT Rate</SecondaryStat>
+      <Passive>Boundless Blessing</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Skyward Atlas</Name>
+      <Type>Catalyst</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/3/33/Weapon_Skyward_Atlas.png</Image>
+      <Rarity>5</Rarity>
+      <BaseAttack>48</BaseAttack>
+      <SecondaryStat>Base ATK</SecondaryStat>
+      <Passive>Wandering Clouds</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Wine and Song</Name>
+      <Type>Catalyst</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/c/c6/Weapon_Wine_and_Song.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>42</BaseAttack>
+      <SecondaryStat>Energy Recharge</SecondaryStat>
+      <Passive>Wind in the Square</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Blackcliff Amulet</Name>
+      <Type>Catalyst</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/2/21/Weapon_Blackcliff_Amulet.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>42</BaseAttack>
+      <SecondaryStat>Energy Recharge</SecondaryStat>
+      <Passive>Exorcise</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Eye of Perception</Name>
+      <Type>Catalyst</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/6/6c/Weapon_Eye_of_Perception.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>41</BaseAttack>
+      <SecondaryStat>Base ATK</SecondaryStat>
+      <Passive>Echo</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Favonius Codex</Name>
+      <Type>Catalyst</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/3/36/Weapon_Favonius_Codex.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>42</BaseAttack>
+      <SecondaryStat>Energy Recharge</SecondaryStat>
+      <Passive>Critical Charge</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Mappa Mare</Name>
+      <Type>Catalyst</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/4/4d/Weapon_Mappa_Mare.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>44</BaseAttack>
+      <SecondaryStat>Elemental Mastery</SecondaryStat>
+      <Passive>Infusion Scroll</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>The Widsith</Name>
+      <Type>Catalyst</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/f/f0/Weapon_The_Widsith.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>42</BaseAttack>
+      <SecondaryStat>CRIT DMG</SecondaryStat>
+      <Passive>Debut</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Solar Pearl</Name>
+      <Type>Catalyst</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/f/fc/Weapon_Solar_Pearl.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>42</BaseAttack>
+      <SecondaryStat>CRIT Rate</SecondaryStat>
+      <Passive>Solar Shine</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Prototype Malice</Name>
+      <Type>Catalyst</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/3/32/Weapon_Prototype_Malice.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>41</BaseAttack>
+      <SecondaryStat>Base HP</SecondaryStat>
+      <Passive>Golden Plating</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Royal Grimoire</Name>
+      <Type>Catalyst</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/9/99/Weapon_Royal_Grimoire.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>44</BaseAttack>
+      <SecondaryStat>Base ATK</SecondaryStat>
+      <Passive>Energy Blast</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Sacrificial Fragments</Name>
+      <Type>Catalyst</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/6/6c/Weapon_Sacrificial_Fragments.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>41</BaseAttack>
+      <SecondaryStat>Elemental Mastery</SecondaryStat>
+      <Passive>Composed</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Twin Nephrite</Name>
+      <Type>Catalyst</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/e/e3/Weapon_Twin_Nephrite.png</Image>
+      <Rarity>3</Rarity>
+      <BaseAttack>40</BaseAttack>
+      <SecondaryStat>CRIT Rate</SecondaryStat>
+      <Passive>Guerilla Tactic</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Thrilling Tales of Dragon Slayers</Name>
+      <Type>Catalyst</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/1/19/Weapon_Thrilling_Tales_of_Dragon_Slayers.png</Image>
+      <Rarity>3</Rarity>
+      <BaseAttack>39</BaseAttack>
+      <SecondaryStat>Base HP</SecondaryStat>
+      <Passive>Legacy</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Amber Catalyst</Name>
+      <Type>Catalyst</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/9/97/Weapon_Amber_Catalyst.png</Image>
+      <Rarity>3</Rarity>
+      <BaseAttack>40</BaseAttack>
+      <SecondaryStat>Elemental Mastery</SecondaryStat>
+      <Passive>Elemental Mastery</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Magic Guide</Name>
+      <Type>Catalyst</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/3/39/Weapon_Magic_Guide.png</Image>
+      <Rarity>3</Rarity>
+      <BaseAttack>38</BaseAttack>
+      <SecondaryStat>Elemental Mastery</SecondaryStat>
+      <Passive>Bane of Storm and Tide</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Otherworldly Story</Name>
+      <Type>Catalyst</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/1/11/Weapon_Otherworldly_Story.png</Image>
+      <Rarity>3</Rarity>
+      <BaseAttack>39</BaseAttack>
+      <SecondaryStat>Energy Recharge</SecondaryStat>
+      <Passive>Energy Shower</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Emerald Orb</Name>
+      <Type>Catalyst</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/7/7c/Weapon_Emerald_Orb.png</Image>
+      <Rarity>3</Rarity>
+      <BaseAttack>40</BaseAttack>
+      <SecondaryStat>Elemental Mastery</SecondaryStat>
+      <Passive>Rapids</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Pocket Grimoire</Name>
+      <Type>Catalyst</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/1/16/Weapon_Pocket_Grimoire.png</Image>
+      <Rarity>2</Rarity>
+      <BaseAttack>33</BaseAttack>
+      <SecondaryStat>None</SecondaryStat>
+      <Passive>None</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Apprentice's Notes</Name>
+      <Type>Catalyst</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/c/cf/Weapon_Apprentice%27s_Notes.png</Image>
+      <Rarity>1</Rarity>
+      <BaseAttack>23</BaseAttack>
+      <SecondaryStat>None</SecondaryStat>
+      <Passive>None</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Amos' Bow</Name>
+      <Type>Bow</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/d/de/Weapon_Amos%27_Bow.png</Image>
+      <Rarity>5</Rarity>
+      <BaseAttack>46</BaseAttack>
+      <SecondaryStat>Base ATK</SecondaryStat>
+      <Passive>Strong-Willed</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Skyward Harp</Name>
+      <Type>Bow</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/1/19/Weapon_Skyward_Harp.png</Image>
+      <Rarity>5</Rarity>
+      <BaseAttack>45</BaseAttack>
+      <SecondaryStat>CRIT Rate</SecondaryStat>
+      <Passive>Echoing Ballad</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Alley Hunter</Name>
+      <Type>Bow</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/0/0a/Weapon_Alley_Hunter.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>41</BaseAttack>
+      <SecondaryStat>CRIT Rate</SecondaryStat>
+      <Passive>Urban Guerrilla</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>The Stringless</Name>
+      <Type>Bow</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/7/71/Weapon_The_Stringless.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>42</BaseAttack>
+      <SecondaryStat>Elemental Mastery</SecondaryStat>
+      <Passive>Arrowless Song</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Sacrificial Bow</Name>
+      <Type>Bow</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/e/ec/Weapon_Sacrificial_Bow.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>43</BaseAttack>
+      <SecondaryStat>Energy Recharge</SecondaryStat>
+      <Passive>Composed</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Rust</Name>
+      <Type>Bow</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/1/1c/Weapon_Rust.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>42</BaseAttack>
+      <SecondaryStat>Base ATK</SecondaryStat>
+      <Passive>Rapid Firing</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Royal Bow</Name>
+      <Type>Bow</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/9/99/Weapon_Royal_Bow.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>42</BaseAttack>
+      <SecondaryStat>ATK</SecondaryStat>
+      <Passive>Focus</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>The Viridescent Hunt</Name>
+      <Type>Bow</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/f/ff/Weapon_The_Viridescent_Hunt.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>42</BaseAttack>
+      <SecondaryStat>CRIT Rate</SecondaryStat>
+      <Passive>Verdant Wind</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Prototype Crescent</Name>
+      <Type>Bow</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/4/43/Weapon_Prototype_Crescent.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>42</BaseAttack>
+      <SecondaryStat>ATK</SecondaryStat>
+      <Passive>Unreturning</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Favonius Warbow</Name>
+      <Type>Bow</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/8/85/Weapon_Favonius_Warbow.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>41</BaseAttack>
+      <SecondaryStat>Energy Recharge</SecondaryStat>
+      <Passive>Windfall</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Compound Bow</Name>
+      <Type>Bow</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/3/32/Weapon_Compound_Bow.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>41</BaseAttack>
+      <SecondaryStat>Physical DMG Bonus</SecondaryStat>
+      <Passive>Infusion Arrow</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Blackcliff Warbow</Name>
+      <Type>Bow</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/b/b8/Weapon_Blackcliff_Warbow.png</Image>
+      <Rarity>4</Rarity>
+      <BaseAttack>44</BaseAttack>
+      <SecondaryStat>Base ATK</SecondaryStat>
+      <Passive>Press the Advantage</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Raven Bow</Name>
+      <Type>Bow</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/d/d0/Weapon_Raven_Bow.png</Image>
+      <Rarity>3</Rarity>
+      <BaseAttack>40</BaseAttack>
+      <SecondaryStat>Elemental Mastery</SecondaryStat>
+      <Passive>Bane of Flame and Water</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Messenger</Name>
+      <Type>Bow</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/3/38/Weapon_Messenger.png</Image>
+      <Rarity>3</Rarity>
+      <BaseAttack>40</BaseAttack>
+      <SecondaryStat>CRIT DMG</SecondaryStat>
+      <Passive>Archer's Message</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Ebony Bow</Name>
+      <Type>Bow</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/a/a1/Weapon_Ebony_Bow.png</Image>
+      <Rarity>3</Rarity>
+      <BaseAttack>40</BaseAttack>
+      <SecondaryStat>Base ATK</SecondaryStat>
+      <Passive>Decimate</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Sharpshooter's Oath</Name>
+      <Type>Bow</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/5/52/Weapon_Sharpshooter%27s_Oath.png</Image>
+      <Rarity>3</Rarity>
+      <BaseAttack>39</BaseAttack>
+      <SecondaryStat>CRIT DMG</SecondaryStat>
+      <Passive>Precise</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Slingshot</Name>
+      <Type>Bow</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/c/ca/Weapon_Slingshot.png</Image>
+      <Rarity>3</Rarity>
+      <BaseAttack>38</BaseAttack>
+      <SecondaryStat>CRIT Rate</SecondaryStat>
+      <Passive>Slingshot</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Recurve Bow</Name>
+      <Type>Bow</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/b/b5/Weapon_Recurve_Bow.png</Image>
+      <Rarity>3</Rarity>
+      <BaseAttack>38</BaseAttack>
+      <SecondaryStat>Base HP</SecondaryStat>
+      <Passive>Cull the Weak</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Seasoned Hunter's Bow</Name>
+      <Type>Bow</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/8/82/Weapon_Seasoned_Hunter%27s_Bow.png</Image>
+      <Rarity>2</Rarity>
+      <BaseAttack>33</BaseAttack>
+      <SecondaryStat>None</SecondaryStat>
+      <Passive>None</Passive>
+    </Weapon>
+    <Weapon>
+      <Name>Hunter's Bow</Name>
+      <Type>Bow</Type>
+      <Image>https://vignette.wikia.nocookie.net/gensin-impact/images/4/44/Weapon_Hunter%27s_Bow.png</Image>
+      <Rarity>1</Rarity>
+      <BaseAttack>23</BaseAttack>
+      <SecondaryStat>None</SecondaryStat>
+      <Passive>None</Passive>
+    </Weapon>
+  </Weapons>
+</WeaponCollectionData>

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text;
 using System.Xml.Serialization;
 
 namespace Assignment2b
@@ -165,13 +166,17 @@ namespace Assignment2b
 
         public bool LoadXML(string path)
         {
-            using (StreamReader reader = new StreamReader(path))
-            {
-                while (reader.Peek() > 0)
-                {
-                    string line = reader.ReadLine();
+            XmlSerializer xmlSerializer = new XmlSerializer(typeof(WeaponCollectionData));
 
-                    if (Weapon.TryParse(line, out Weapon weapon))
+            using (StreamReader streamReader = new StreamReader(path))
+            {
+                string xmlText = streamReader.ReadToEnd();
+
+                using (TextReader textReader = new StringReader(xmlText))
+                {
+                    WeaponCollectionData weaponCollectionData = (WeaponCollectionData)xmlSerializer.Deserialize(textReader);
+
+                    foreach (Weapon weapon in weaponCollectionData.Weapons)
                     {
                         Add(weapon);
                     }
@@ -184,19 +189,22 @@ namespace Assignment2b
         public bool SaveAsXML(string path)
         {
             WeaponCollectionData weaponCollectionData = new WeaponCollectionData();
+            XmlSerializer xmlSerializer = new XmlSerializer(typeof(WeaponCollectionData));
 
             foreach (Weapon weapon in this)
             {
                 weaponCollectionData.Weapons.Add(weapon);
             }
 
+            var stringBuilder = new StringBuilder();
+            using (TextWriter writer = new StringWriter(stringBuilder))
+            {
+                xmlSerializer.Serialize(writer, weaponCollectionData);
+            }
+
             using (StreamWriter streamWriter = new StreamWriter(fileStream))
             {
-                XmlSerializer xmlSerializer = new XmlSerializer(typeof(WeaponCollectionData));
-                xmlSerializer.Serialize(streamWriter, weaponCollectionData);
-
-                string xmlString = streamWriter.ToString();
-                streamWriter.WriteLine(xmlString);
+                streamWriter.WriteLine(stringBuilder.ToString());
             }
             fileStream.Close();
 
