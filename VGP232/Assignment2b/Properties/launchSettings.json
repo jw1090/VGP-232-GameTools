@@ -2,7 +2,7 @@
   "profiles": {
     "Assignment2b": {
       "commandName": "Project",
-      "commandLineArgs": "-i data2.csv -o output.xml -c -s BaseAttack"
+      "commandLineArgs": "-i data2.json -o output.json -c -s BaseAttack"
     }
   }
 }

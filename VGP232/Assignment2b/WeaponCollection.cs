@@ -22,6 +22,14 @@ namespace Assignment2b
                 return false;
             }
 
+            if (File.Exists(path) == false)
+            {
+                Console.WriteLine($"The input file path does not exist: {path}");
+                return false;
+            }
+
+            Clear(); // Reset for new data
+
             string extention =  Path.GetExtension(path);
 
             switch (extention)
@@ -76,16 +84,8 @@ namespace Assignment2b
 
         public bool LoadCSV(string path)
         {
-            if (File.Exists(path) == false)
-            {
-                Console.WriteLine($"The input file path does not exist: {path}");
-                return false;
-            }
-
             using (StreamReader reader = new StreamReader(path))
             {
-                Clear(); // Reset for new data
-
                 // Skip the first line because header does not need to be parsed.
                 string header = reader.ReadLine();
 
@@ -125,19 +125,35 @@ namespace Assignment2b
 
         public bool LoadJSON(string path)
         {
-            throw new NotImplementedException();
+            using (StreamReader reader = new StreamReader(path))
+            {
+                string jsonText = reader.ReadToEnd();
+
+                WeaponCollectionData weaponCollectionData = JsonConvert.DeserializeObject<WeaponCollectionData>(jsonText);
+
+                foreach (Weapon weapon in weaponCollectionData.Weapons)
+                {
+                    Add(weapon);
+                }
+            }
+
+            return true;
         }
 
         public bool SaveAsJSON(string path)
         {
             using (StreamWriter writer = new StreamWriter(fileStream))
             {
+                WeaponCollectionData weaponCollectionData = new WeaponCollectionData();
+
                 foreach (Weapon weapon in this)
                 {
-                    string jsonString = JsonConvert.SerializeObject(weapon, Newtonsoft.Json.Formatting.Indented);
-
-                    writer.WriteLine(jsonString);
+                    weaponCollectionData.Weapons.Add(weapon);
                 }
+
+                string jsonString = JsonConvert.SerializeObject(weaponCollectionData, Formatting.Indented);
+
+                writer.WriteLine(jsonString);
 
                 Console.WriteLine($"The JSON file has been saved to {path}");
             }
@@ -149,7 +165,22 @@ namespace Assignment2b
 
         public bool LoadXML(string path)
         {
-            throw new NotImplementedException();
+            using (StreamReader reader = new StreamReader(path))
+            {
+                Clear(); // Reset for new data
+
+                while (reader.Peek() > 0)
+                {
+                    string line = reader.ReadLine();
+
+                    if (Weapon.TryParse(line, out Weapon weapon))
+                    {
+                        Add(weapon);
+                    }
+                }
+            }
+
+            return true;
         }
 
         public bool SaveAsXML(string path)
