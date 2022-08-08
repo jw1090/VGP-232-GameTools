@@ -18,7 +18,7 @@ namespace Assignment2b
         Passive,
     }
 
-    class MainClass
+    public class MainClass
     {
         public static void Main(string[] args)
         {

@@ -1,17 +1,27 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Xml.Serialization;
 
 namespace Assignment2b
 {
     class WeaponCollection : List<Weapon>, IPeristence, ICsvSerializable, IJsonSerializable, IXmlSerializable
     {
         private FileStream fileStream;
+
         public bool AppendToFile { get; set; }
 
-        public bool Load(string path)
+        // Looks at the file extension to determine what type of loading it should do.
+        public bool Load(string path) 
         {
+            if (string.IsNullOrEmpty(path))
+            {
+                Console.WriteLine($"No input file path specified.");
+                return false;
+            }
+
             string extention =  Path.GetExtension(path);
 
             switch (extention)
@@ -28,8 +38,26 @@ namespace Assignment2b
             }
         }
 
+        // Looks at the file extension to determine what type of saving it should do.
         public bool Save(string path)
         {
+            if (string.IsNullOrEmpty(path))
+            {
+                Console.WriteLine($"File path [{path}] is null or empty.");
+                return false;
+            }
+
+            // Check if the append flag is set, and if so, then open the file in append mode.
+            // Otherwise, create the file to write.
+            if (AppendToFile && File.Exists(path))
+            {
+                fileStream = File.Open(path, FileMode.Append);
+            }
+            else
+            {
+                fileStream = File.Open(path, FileMode.Create);
+            }
+
             string extention = Path.GetExtension(path);
 
             switch (extention)
@@ -48,85 +76,13 @@ namespace Assignment2b
 
         public bool LoadCSV(string path)
         {
-            if (string.IsNullOrEmpty(path))
-            {
-                Console.WriteLine($"No input file path specified.");
-
-                return false;
-            }
-            else if (File.Exists(path) == false)
+            if (File.Exists(path) == false)
             {
                 Console.WriteLine($"The input file path does not exist: {path}");
-
-                return false;
-            }
-            else // Parse data to create a new WeaponCollection.
-            {
-                ParseWeaponData(path);
-
-                return true;
-            }
-        }
-
-        public bool SaveAsCSV(string path)
-        {
-            if (string.IsNullOrEmpty(path))
-            {
                 return false;
             }
 
-            // Check if the append flag is set, and if so, then open the file in append mode.
-            // Otherwise, create the file to write.
-            if (AppendToFile && File.Exists(path))
-            {
-                fileStream = File.Open(path, FileMode.Append);
-            }
-            else
-            {
-                fileStream = File.Open(path, FileMode.Create);
-            }
-
-            // Opens a stream writer with the file handle to write to the output file.
-            using (StreamWriter writer = new StreamWriter(fileStream))
-            {
-                writer.WriteLine($"Name,Type,Image,Rarity,BaseAttack,SecondaryStat,Passive");
-
-                foreach (Weapon weapon in this)
-                {
-                    writer.WriteLine(weapon);
-                }
-
-                Console.WriteLine($"The file has been saved to {path}");
-            }
-
-            fileStream.Close();
-
-            return true;
-        }
-
-        public bool LoadJSON(string path)
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool SaveAsJSON(string path)
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool LoadXML(string path)
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool SaveAsXML(string path)
-        {
-            throw new NotImplementedException();
-        }
-
-        private void ParseWeaponData(string fileName)
-        {
-            using (StreamReader reader = new StreamReader(fileName))
+            using (StreamReader reader = new StreamReader(path))
             {
                 Clear(); // Reset for new data
 
@@ -144,6 +100,78 @@ namespace Assignment2b
                     }
                 }
             }
+
+            return true;
+        }
+
+        public bool SaveAsCSV(string path)
+        {
+            using (StreamWriter writer = new StreamWriter(fileStream))
+            {
+                writer.WriteLine($"Name,Type,Image,Rarity,BaseAttack,SecondaryStat,Passive");
+
+                foreach (Weapon weapon in this)
+                {
+                    writer.WriteLine(weapon);
+                }
+
+                Console.WriteLine($"The CSV file has been saved to {path}");
+            }
+
+            fileStream.Close();
+
+            return true;
+        }
+
+        public bool LoadJSON(string path)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool SaveAsJSON(string path)
+        {
+            using (StreamWriter writer = new StreamWriter(fileStream))
+            {
+                foreach (Weapon weapon in this)
+                {
+                    string jsonString = JsonConvert.SerializeObject(weapon, Newtonsoft.Json.Formatting.Indented);
+
+                    writer.WriteLine(jsonString);
+                }
+
+                Console.WriteLine($"The JSON file has been saved to {path}");
+            }
+
+            fileStream.Close();
+
+            return true;
+        }
+
+        public bool LoadXML(string path)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool SaveAsXML(string path)
+        {
+            using (StreamWriter streamWriter = new StreamWriter(fileStream))
+            {
+                XmlSerializer xmlSerializer = new XmlSerializer(typeof(Weapon));
+
+                foreach (Weapon weapon in this)
+                {
+                    xmlSerializer.Serialize(streamWriter, weapon);
+                    string xmlString = streamWriter.ToString();
+
+                    streamWriter.WriteLine(xmlString);
+                }
+
+                Console.WriteLine($"The XML file has been saved to {path}");
+            }
+
+            fileStream.Close();
+
+            return true;
         }
 
         public int GetHighestBaseAttack()

@@ -2,6 +2,7 @@
 
 namespace Assignment2b
 {
+    [Serializable]
     public class Weapon
     {
         public enum WeaponType
