@@ -1,4 +1,4 @@
-﻿namespace Assignment2b.Interfaces
+﻿namespace Assignment2b
 {
     public interface ICsvSerializable
     {

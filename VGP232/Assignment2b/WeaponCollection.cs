@@ -5,52 +5,89 @@ using System.Linq;
 
 namespace Assignment2b
 {
-    class WeaponCollection : List<Weapon>, IPeristence
+    class WeaponCollection : List<Weapon>, IPeristence, ICsvSerializable, IJsonSerializable, IXmlSerializable
     {
-        public bool Load(string fileName)
+        private FileStream fileStream;
+        public bool AppendToFile { get; set; }
+
+        public bool Load(string path)
         {
-            if (string.IsNullOrEmpty(fileName))
+            string extention =  Path.GetExtension(path);
+
+            switch (extention)
+            {
+                case ".csv":
+                    return LoadCSV(path);
+                case ".json":
+                    return LoadJSON(path);
+                case ".xml":
+                    return LoadXML(path);
+                default:
+                    Console.WriteLine($"File load path [{path}] is not valid, please use .csv, .json, or .xml!");
+                    return false;
+            }
+        }
+
+        public bool Save(string path)
+        {
+            string extention = Path.GetExtension(path);
+
+            switch (extention)
+            {
+                case ".csv":
+                    return SaveAsCSV(path);
+                case ".json":
+                    return SaveAsJSON(path);
+                case ".xml":
+                    return SaveAsXML(path);
+                default:
+                    Console.WriteLine($"File save path [{path}] is not valid, please use .csv, .json, or .xml!");
+                    return false;
+            }
+        }
+
+        public bool LoadCSV(string path)
+        {
+            if (string.IsNullOrEmpty(path))
             {
                 Console.WriteLine($"No input file path specified.");
 
                 return false;
             }
-            else if (File.Exists(fileName) == false)
+            else if (File.Exists(path) == false)
             {
-                Console.WriteLine($"The input file path does not exist: {fileName}");
+                Console.WriteLine($"The input file path does not exist: {path}");
 
                 return false;
             }
             else // Parse data to create a new WeaponCollection.
             {
-                ParseWeaponData(fileName);
+                ParseWeaponData(path);
 
                 return true;
             }
         }
 
-        public bool Save(string filename, bool appendToFile = false)
+        public bool SaveAsCSV(string path)
         {
-            if (string.IsNullOrEmpty(filename))
+            if (string.IsNullOrEmpty(path))
             {
                 return false;
             }
 
-            FileStream fs;
-
             // Check if the append flag is set, and if so, then open the file in append mode.
             // Otherwise, create the file to write.
-            if (appendToFile && File.Exists(filename))
+            if (AppendToFile && File.Exists(path))
             {
-                fs = File.Open(filename, FileMode.Append);
+                fileStream = File.Open(path, FileMode.Append);
             }
             else
             {
-                fs = File.Open(filename, FileMode.Create);
+                fileStream = File.Open(path, FileMode.Create);
             }
 
             // Opens a stream writer with the file handle to write to the output file.
-            using (StreamWriter writer = new StreamWriter(fs))
+            using (StreamWriter writer = new StreamWriter(fileStream))
             {
                 writer.WriteLine($"Name,Type,Image,Rarity,BaseAttack,SecondaryStat,Passive");
 
@@ -59,10 +96,32 @@ namespace Assignment2b
                     writer.WriteLine(weapon);
                 }
 
-                Console.WriteLine($"The file has been saved to {filename}");
+                Console.WriteLine($"The file has been saved to {path}");
             }
 
+            fileStream.Close();
+
             return true;
+        }
+
+        public bool LoadJSON(string path)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool SaveAsJSON(string path)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool LoadXML(string path)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool SaveAsXML(string path)
+        {
+            throw new NotImplementedException();
         }
 
         private void ParseWeaponData(string fileName)

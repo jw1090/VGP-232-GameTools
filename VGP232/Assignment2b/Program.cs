@@ -1,6 +1,6 @@
 ﻿using System;
 
-// Assignment 2a
+// Assignment 2b
 // NAME: Joseph Walden
 // STUDENT NUMBER: 2042506
 
@@ -122,7 +122,9 @@ namespace Assignment2b
 
             if (results.Count > 0)
             {
-                if (results.Save(outputFile, appendToFile) == false) // Could not save.
+                results.AppendToFile = appendToFile;
+
+                if (results.Save(outputFile) == false) // Could not save.
                 {
                     // Prints out each entry in the weapon list results.
                     foreach (Weapon weapon in results)
