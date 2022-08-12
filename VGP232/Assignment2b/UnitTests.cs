@@ -114,7 +114,7 @@ namespace Assignment2b
             Assert.IsTrue(_weaponCollection.Count == 0);
         }
 
-        // Weapon Collection Test Load JSON
+        // Weapon Collection Load JSON Tests
         [Test]
         public void WeaponCollection_Load_Save_Load_ValidJson()
         {
@@ -148,6 +148,44 @@ namespace Assignment2b
             Assert.IsTrue(_weaponCollection.Load(_inputPathCSV));
             Assert.IsTrue(_weaponCollection.Save(_outputPathJSON));
             Assert.IsTrue(_weaponCollection.LoadJSON(_inputPathJSON));
+            Assert.AreEqual(95, _weaponCollection.Count);
+        }
+
+        // Weapon Collection Load CSV Tests
+        [Test]
+        public void WeaponCollection_Load_Save_Load_ValidCsv()
+        {
+            Assert.IsTrue(_weaponCollection.Load(_inputPathCSV));
+            Assert.IsTrue(_weaponCollection.Save(_outputPathCSV));
+            Assert.IsTrue(_weaponCollection.Load(_inputPathCSV));
+            Assert.AreEqual(95, _weaponCollection.Count);
+        }
+
+        [Test]
+        public void WeaponCollection_Load_SaveAsCSV_LoadCSV_ValidCsv()
+        {
+            Assert.IsTrue(_weaponCollection.Load(_inputPathCSV));
+            Assert.IsTrue(_weaponCollection.SaveAsCSV(_outputPathCSV));
+            Assert.IsTrue(_weaponCollection.LoadCSV(_inputPathCSV));
+            Assert.AreEqual(95, _weaponCollection.Count);
+        }
+
+        // Weapon Collection Load XML Tests
+        [Test]
+        public void WeaponCollection_Load_Save_Load_ValidXml()
+        {
+            Assert.IsTrue(_weaponCollection.Load(_inputPathCSV));
+            Assert.IsTrue(_weaponCollection.Save(_outputPathXML));
+            Assert.IsTrue(_weaponCollection.Load(_inputPathXML));
+            Assert.AreEqual(95, _weaponCollection.Count);
+        }
+
+        [Test]
+        public void WeaponCollection_Load_SaveAsXML_LoadXML_ValidXml()
+        {
+            Assert.IsTrue(_weaponCollection.Load(_inputPathCSV));
+            Assert.IsTrue(_weaponCollection.SaveAsXML(_outputPathXML));
+            Assert.IsTrue(_weaponCollection.LoadXML(_inputPathXML));
             Assert.AreEqual(95, _weaponCollection.Count);
         }
 
