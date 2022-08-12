@@ -15,7 +15,7 @@ namespace Assignment2b
         public bool AppendToFile { get; set; }
 
         // Looks at the file extension to determine what type of loading it should do.
-        public bool Load(string path) 
+        public bool Load(string path)
         {
             if (string.IsNullOrEmpty(path))
             {
@@ -29,7 +29,7 @@ namespace Assignment2b
                 return false;
             }
 
-            string extention =  Path.GetExtension(path);
+            string extention = Path.GetExtension(path);
 
             switch (extention)
             {
@@ -88,6 +88,13 @@ namespace Assignment2b
         {
             Clear();
 
+            string extention = Path.GetExtension(path);
+            if (extention != ".csv")
+            {
+                Console.WriteLine($"File save path [{path}] is not valid, please use .csv!");
+                return false;
+            }
+
             using (StreamReader reader = new StreamReader(path))
             {
                 // Skip the first line because header does not need to be parsed.
@@ -133,6 +140,13 @@ namespace Assignment2b
         {
             Clear();
 
+            string extention = Path.GetExtension(path);
+            if (extention != ".json")
+            {
+                Console.WriteLine($"File save path [{path}] is not valid, please use .json!");
+                return false;
+            }
+
             using (StreamReader reader = new StreamReader(path))
             {
                 string jsonText = reader.ReadToEnd();
@@ -176,6 +190,13 @@ namespace Assignment2b
         public bool LoadXML(string path)
         {
             Clear();
+
+            string extention = Path.GetExtension(path);
+            if (extention != ".xml")
+            {
+                Console.WriteLine($"File save path [{path}] is not valid, please use .xml!");
+                return false;
+            }
 
             XmlSerializer xmlSerializer = new XmlSerializer(typeof(WeaponCollectionData));
 

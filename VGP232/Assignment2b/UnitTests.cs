@@ -189,6 +189,50 @@ namespace Assignment2b
             Assert.AreEqual(95, _weaponCollection.Count);
         }
 
+        // Weapon Collection Empty Save Tests
+        [Test]
+        public void WeaponCollection_SaveEmpty_Load_ValidJson()
+        {
+           WeaponCollection emptyCollection = new WeaponCollection();
+           string emptyPath = CombineToAppPath("empty.json");
+
+            Assert.IsTrue(emptyCollection.SaveAsJSON(emptyPath));
+            Assert.IsTrue(emptyCollection.Load(emptyPath));
+            Assert.AreEqual(0, emptyCollection.Count);
+        }
+
+        [Test]
+        public void WeaponCollection_SaveEmpty_Load_ValidCsv()
+        {
+            WeaponCollection emptyCollection = new WeaponCollection();
+            string emptyPath = CombineToAppPath("empty.csv");
+
+            Assert.IsTrue(emptyCollection.SaveAsCSV(emptyPath));
+            Assert.IsTrue(emptyCollection.Load(emptyPath));
+            Assert.AreEqual(0, emptyCollection.Count);
+        }
+
+        [Test]
+        public void WeaponCollection_SaveEmpty_Load_ValidXml()
+        {
+            WeaponCollection emptyCollection = new WeaponCollection();
+            string emptyPath = CombineToAppPath("empty.xml");
+
+            Assert.IsTrue(emptyCollection.SaveAsXML(emptyPath));
+            Assert.IsTrue(emptyCollection.Load(emptyPath));
+            Assert.AreEqual(0, emptyCollection.Count);
+        }
+
+        // Weapon Collection Invalid Fromat Tests
+        [Test]
+        public void WeaponCollection_Load_SaveJSON_LoadXML_InvalidXml()
+        {
+            Assert.IsTrue(_weaponCollection.Load(_inputPathCSV));
+            Assert.IsTrue(_weaponCollection.SaveAsJSON(_outputPathJSON));
+            Assert.IsFalse(_weaponCollection.LoadXML(_inputPathJSON));
+            Assert.AreEqual(0, _weaponCollection.Count);
+        }
+
         // Weapon Unit Tests
         [Test]
         public void Weapon_TryParseValidLine_TruePropertiesSet()
