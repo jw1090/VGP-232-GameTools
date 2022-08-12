@@ -29,8 +29,6 @@ namespace Assignment2b
                 return false;
             }
 
-            Clear(); // Reset for new data
-
             string extention =  Path.GetExtension(path);
 
             switch (extention)
@@ -56,17 +54,6 @@ namespace Assignment2b
                 return false;
             }
 
-            // Check if the append flag is set, and if so, then open the file in append mode.
-            // Otherwise, create the file to write.
-            if (AppendToFile && File.Exists(path))
-            {
-                fileStream = File.Open(path, FileMode.Append);
-            }
-            else
-            {
-                fileStream = File.Open(path, FileMode.Create);
-            }
-
             string extention = Path.GetExtension(path);
 
             switch (extention)
@@ -83,8 +70,24 @@ namespace Assignment2b
             }
         }
 
+        private void OpenFileStream(string path)
+        {
+            // Check if the append flag is set, and if so, then open the file in append mode.
+            // Otherwise, create the file to write.
+            if (AppendToFile && File.Exists(path))
+            {
+                fileStream = File.Open(path, FileMode.Append);
+            }
+            else
+            {
+                fileStream = File.Open(path, FileMode.Create);
+            }
+        }
+
         public bool LoadCSV(string path)
         {
+            Clear();
+
             using (StreamReader reader = new StreamReader(path))
             {
                 // Skip the first line because header does not need to be parsed.
@@ -107,6 +110,8 @@ namespace Assignment2b
 
         public bool SaveAsCSV(string path)
         {
+            OpenFileStream(path);
+
             using (StreamWriter writer = new StreamWriter(fileStream))
             {
                 writer.WriteLine($"Name,Type,Image,Rarity,BaseAttack,SecondaryStat,Passive");
@@ -126,6 +131,8 @@ namespace Assignment2b
 
         public bool LoadJSON(string path)
         {
+            Clear();
+
             using (StreamReader reader = new StreamReader(path))
             {
                 string jsonText = reader.ReadToEnd();
@@ -143,6 +150,8 @@ namespace Assignment2b
 
         public bool SaveAsJSON(string path)
         {
+            OpenFileStream(path);
+
             WeaponCollectionData weaponCollectionData = new WeaponCollectionData();
 
             foreach (Weapon weapon in this)
@@ -166,6 +175,8 @@ namespace Assignment2b
 
         public bool LoadXML(string path)
         {
+            Clear();
+
             XmlSerializer xmlSerializer = new XmlSerializer(typeof(WeaponCollectionData));
 
             using (StreamReader streamReader = new StreamReader(path))
@@ -188,6 +199,8 @@ namespace Assignment2b
 
         public bool SaveAsXML(string path)
         {
+            OpenFileStream(path);
+
             WeaponCollectionData weaponCollectionData = new WeaponCollectionData();
             XmlSerializer xmlSerializer = new XmlSerializer(typeof(WeaponCollectionData));
 
