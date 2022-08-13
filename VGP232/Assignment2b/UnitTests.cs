@@ -51,6 +51,30 @@ namespace Assignment2b
             {
                 File.Delete(_outputPathCSV);
             }
+            if (File.Exists(_outputPathJSON))
+            {
+                File.Delete(_outputPathJSON);
+            }
+            if (File.Exists(_outputPathXML))
+            {
+                File.Delete(_outputPathXML);
+            }
+
+            string emptyCSV = CombineToAppPath("empty.csv");
+            string emptyJSON = CombineToAppPath("empty.json");
+            string emptyXML = CombineToAppPath("empty.xml");
+            if (File.Exists(emptyCSV))
+            {
+                File.Delete(emptyCSV);
+            }
+            if (File.Exists(emptyJSON))
+            {
+                File.Delete(emptyJSON);
+            }
+            if (File.Exists(emptyXML))
+            {
+                File.Delete(emptyXML);
+            }
         }
 
         // WeaponCollection Unit Tests
@@ -223,22 +247,41 @@ namespace Assignment2b
             Assert.AreEqual(0, emptyCollection.Count);
         }
 
-        // Weapon Collection Invalid Fromat Tests
+        // Weapon Collection Invalid Format Tests
         [Test]
         public void WeaponCollection_Load_SaveJSON_LoadXML_InvalidXml()
         {
             Assert.IsTrue(_weaponCollection.Load(_inputPathCSV));
             Assert.IsTrue(_weaponCollection.SaveAsJSON(_outputPathJSON));
-            Assert.IsFalse(_weaponCollection.LoadXML(_inputPathJSON));
+            Assert.IsFalse(_weaponCollection.LoadXML(_outputPathJSON));
             Assert.AreEqual(0, _weaponCollection.Count);
         }
 
-        // Weapon Unit Tests
+        public void WeaponCollection_Load_SaveXML_LoadJSON_InvalidJson()
+        {
+            Assert.IsTrue(_weaponCollection.Load(_inputPathCSV));
+            Assert.IsTrue(_weaponCollection.SaveAsXML(_outputPathXML));
+            Assert.IsFalse(_weaponCollection.LoadJSON(_outputPathXML));
+            Assert.AreEqual(0, _weaponCollection.Count);
+        }
+
+        public void WeaponCollection_ValidCsv_LoadXML_InvalidXml()
+        {
+            Assert.IsTrue(_weaponCollection.LoadXML(_inputPathCSV));
+            Assert.AreEqual(0, _weaponCollection.Count);
+        }
+
+        public void WeaponCollection_ValidCsv_LoadJSON_InvalidJson()
+        {
+            Assert.IsTrue(_weaponCollection.LoadJSON(_inputPathCSV));
+            Assert.AreEqual(0, _weaponCollection.Count);
+        }
+
+        // Weapon Tests
         [Test]
         public void Weapon_TryParseValidLine_TruePropertiesSet()
         {
-            Weapon expected = null;
-            expected = new Weapon()
+            Weapon expected = new Weapon()
             {
                 Name = "Skyward Blade",
                 Type = Weapon.WeaponType.Sword,
@@ -250,9 +293,8 @@ namespace Assignment2b
             };
 
             string line = "Skyward Blade,Sword,https://vignette.wikia.nocookie.net/gensin-impact/images/0/03/Weapon_Skyward_Blade.png,5,46,Energy Recharge,Sky-Piercing Fang";
-            Weapon actual = null;
 
-            Assert.IsTrue(Weapon.TryParse(line, out actual));
+            Assert.IsTrue(Weapon.TryParse(line, out Weapon actual));
             Assert.AreEqual(expected.Name, actual.Name);
             Assert.AreEqual(expected.Type, actual.Type);
             Assert.AreEqual(expected.Image, actual.Image);
