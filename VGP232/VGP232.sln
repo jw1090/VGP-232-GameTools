@@ -1,13 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32228.343
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assignment1", "Assignment1\Assignment1.csproj", "{AD9CBA2A-DA05-44E6-AA0D-36C597C7F5D7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assignment2a", "Assignment2a\Assignment2a.csproj", "{04F9B677-9A55-4DCF-83D6-29CDEDCCF2B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment2b", "Assignment2b\Assignment2b.csproj", "{4901A61A-CEE8-4F20-B22E-5CBD15D78465}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assignment2b", "Assignment2b\Assignment2b.csproj", "{4901A61A-CEE8-4F20-B22E-5CBD15D78465}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeaponLib", "WeaponLib\WeaponLib.csproj", "{B371972D-2A20-4CF6-9152-D781C5ABA202}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment2c", "Assignment2c\Assignment2c.csproj", "{BD1E5C1B-93F1-48AD-8B9B-E38D7461AF74}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{4901A61A-CEE8-4F20-B22E-5CBD15D78465}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4901A61A-CEE8-4F20-B22E-5CBD15D78465}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4901A61A-CEE8-4F20-B22E-5CBD15D78465}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B371972D-2A20-4CF6-9152-D781C5ABA202}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B371972D-2A20-4CF6-9152-D781C5ABA202}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B371972D-2A20-4CF6-9152-D781C5ABA202}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B371972D-2A20-4CF6-9152-D781C5ABA202}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD1E5C1B-93F1-48AD-8B9B-E38D7461AF74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD1E5C1B-93F1-48AD-8B9B-E38D7461AF74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD1E5C1B-93F1-48AD-8B9B-E38D7461AF74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD1E5C1B-93F1-48AD-8B9B-E38D7461AF74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
