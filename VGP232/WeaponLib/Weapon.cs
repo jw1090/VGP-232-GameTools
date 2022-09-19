@@ -3,16 +3,6 @@
     [Serializable]
     public class Weapon
     {
-        public enum WeaponType
-        {
-            None = -1,
-            Sword,
-            Polearm,
-            Claymore,
-            Catalyst,
-            Bow,
-        }
-
         public string Name { get; set; } = string.Empty;
         public WeaponType Type { get; set; } = WeaponType.None;
         public string Image { get; set; } = string.Empty;

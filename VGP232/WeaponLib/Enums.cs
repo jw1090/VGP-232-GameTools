@@ -11,4 +11,14 @@
         SecondaryStat,
         Passive,
     }
+
+    public enum WeaponType
+    {
+        None = -1,
+        Sword,
+        Polearm,
+        Claymore,
+        Catalyst,
+        Bow,
+    }
 }

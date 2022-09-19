@@ -4,7 +4,7 @@ using System.Xml.Serialization;
 
 namespace WeaponLib
 {
-    class WeaponCollection : List<Weapon>, IPeristence, ICsvSerializable, IJsonSerializable, IXmlSerializable
+    public class WeaponCollection : List<Weapon>, IPeristence, ICsvSerializable, IJsonSerializable, IXmlSerializable
     {
         private FileStream fileStream;
 
@@ -253,7 +253,7 @@ namespace WeaponLib
             return this.Min(weapon => weapon.BaseAttack);
         }
 
-        public List<Weapon> GetAllWeaponsOfType(Weapon.WeaponType weaponType)
+        public List<Weapon> GetAllWeaponsOfType(WeaponType weaponType)
         {
             return FindAll(weapon => weapon.Type == weaponType);
         }
